@@ -1,0 +1,24 @@
+{
+  "name": "crud_beer_app",
+  "version": "1.0.0",
+  "description": "Create,Read,Update,Delete example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Greg Gil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "client-sessions": "^0.7.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "json-web-token": "^1.6.3",
+    "mongoose": "^4.2.8",
+    "morgan": "^1.6.1",
+    "multer": "^1.2.0",
+    "serve-favicon": "^2.3.0",
+    "sharp": "^0.16.2"
+  }
+}

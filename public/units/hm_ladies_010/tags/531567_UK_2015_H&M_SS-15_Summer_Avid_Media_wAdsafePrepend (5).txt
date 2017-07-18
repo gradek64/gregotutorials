@@ -1,0 +1,193 @@
+Placement Details: 
+Placement ID: 13128221 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1 
+Placement Name: Avid_Ladies_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 20833 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128221&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128221&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801004/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801003/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128223 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1
+Placement Name: Avid_Mens_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 20833 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128223&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128223&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801006/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801005/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128224 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1
+Placement Name: Avid_Divided_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 20833 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128224&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128224&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801008/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801007/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128226 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media 
+Size: 1x1
+Placement Name: Avid_Kids_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 20833 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128226&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128226&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801010/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801009/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128228 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1
+Placement Name: Avid_AV_Ladies_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 5208 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128228&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128228&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801012/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801011/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128232 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1 
+Placement Name: Avid_AV_Mens_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 5208 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128232&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128232&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801014/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801013/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128234 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1
+Placement Name: Avid_AV_Divided_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 5208 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128234&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128234&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801016/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801015/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 13128237 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - 531567_UK_2015_H&M SS�15 Summer 
+Campaign ID: 531567 
+Site: Avid Media
+Size: 1x1
+Placement Name: Avid__AV_Kids_In-Content
+Placement Format Type: Tracking Only
+Booked Impressions: 5208 
+Placement Dates:
+5/21/2015 12:00:00 AM - 6/10/2015 11:59:00 PM
+
+//To track Impressions use the following URL:
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=13128237&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+		http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=13128237&PluID=0&ord=[timestamp]
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/39046/4801018/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/39046/4801017/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+

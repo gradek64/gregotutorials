@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="./Setting up ElasticSearch with MongoDB (Example)_files/89b8075f9d"></script><script src="./Setting up ElasticSearch with MongoDB (Example)_files/nr-1026.min.js"></script><script type="text/javascript" src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource"></script><script type="text/javascript" async="" src="./Setting up ElasticSearch with MongoDB (Example)_files/50775e2d30a1d50002000221.js"></script><script async="" src="./Setting up ElasticSearch with MongoDB (Example)_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"89b8075f9d","applicationID":"31563158","transactionName":"JVlfRkRcW1hRRR9HRAlCWEJFHERcW0A=","queueTime":0,"applicationTime":122,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta property="current_user:id">
+
+<title>Setting up ElasticSearch with MongoDB (Example)</title>
+<meta name="description" content="A protip by jwwest about mongodb and elasticsearch.">
+<meta name="keywords" content="mongodb, elasticsearch">
+<link rel="canonical" href="https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb">
+<link rel="author" href="https://coderwall.com/jwwest">
+<meta property="og:title" content="Setting up ElasticSearch with MongoDB (Example)">
+<meta property="og:url" content="https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb">
+<meta property="og:site_name" content="Coderwall">
+<meta property="og:description" content="A protip by jwwest about mongodb and elasticsearch.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/16450/giant_guitar.png">
+<meta name="twitter:title" content="Setting up ElasticSearch with MongoDB (Example)">
+<meta name="twitter:url" content="https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb">
+<meta name="twitter:site_name" content="Coderwall">
+<meta name="twitter:site" content="@coderwall">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator:id" content="8735692">
+<meta name="twitter:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/16450/giant_guitar.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="all" href="./Setting up ElasticSearch with MongoDB (Example)_files/application_static-8cd0567f17b372fd07cb9de3659f01a06b0ac69ab55f9c66d395f0b8ebfe2180.css" data-turbolinks-track="reload">
+
+<script src="./Setting up ElasticSearch with MongoDB (Example)_files/application_static-509a608d3b4836cdc196747b04208cc635ad2909018fcd858b3d97aa6453091c.js" data-turbolinks-track="reload"></script><script type="text/javascript" async="" src="./Setting up ElasticSearch with MongoDB (Example)_files/bsa.js"></script>
+<script src="./Setting up ElasticSearch with MongoDB (Example)_files/pEaCoeG7.js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="b+CxFh681pTdtjxEG7RVr1QEAPbU2qjYZx1GE+VcnRJDHZX/vB1MDqAGcGeub9qvPQ53nCDAG+wWavDU9zNYaw==">
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-797907-8', 'auto');
+  </script>
+
+
+<link rel="stylesheet" type="text/css" href="./Setting up ElasticSearch with MongoDB (Example)_files/prettify.css"><script type="text/javascript" id="_bsap_js_74f50e679004d8f4d62fec4b0f74ccf1" src="./Setting up ElasticSearch with MongoDB (Example)_files/s_74f50e679004d8f4d62fec4b0f74ccf1.js" async="async"></script><script type="text/javascript" src="./Setting up ElasticSearch with MongoDB (Example)_files/all.js"></script><script type="text/javascript" src="./Setting up ElasticSearch with MongoDB (Example)_files/CONF.js"></script><script type="text/javascript" src="./Setting up ElasticSearch with MongoDB (Example)_files/pro.js" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(1)" async="async"></script><script type="text/javascript" async="" src="./Setting up ElasticSearch with MongoDB (Example)_files/tagjs"></script><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(2)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(3)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(4)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(5)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(6)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/saved_resource(7)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(1)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(2)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(3)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(4)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(5)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(6)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(7)" width="1" height="1" border="0"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/seg(8)" width="1" height="1" border="0"></head>
+<body><script charset="UTF-8" src="./Setting up ElasticSearch with MongoDB (Example)_files/891042_ALL.js"></script><script charset="UTF-8" src="./Setting up ElasticSearch with MongoDB (Example)_files/891042_BNX.js"></script><script charset="UTF-8" src="./Setting up ElasticSearch with MongoDB (Example)_files/linkcheck.js"></script><script type="text/javascript" async="" src="./Setting up ElasticSearch with MongoDB (Example)_files/ga.js"></script>
+<div class="clearfix">
+<header class="border-bottom">
+<nav class="clearfix py2">
+<div class="col col-4 sm-col-3 md-col-2">
+<div class="sm-ml1">
+<a class="btn logo relative" href="https://coderwall.com/">
+<div class="absolute" style="top: 2px">
+<svg version="1.1" viewBox="0 0 20 20" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="5" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="15" r="1.4142" fill="#A26FF9"></circle>
+</svg>
+
+</div>
+<div class="left font-x-lg" style="padding-left: 35px;">
+Coderwall
+</div>
+</a>
+</div>
+</div>
+<div class="col col-3 sm-col-6 md-col-8 h6">
+<a class="btn muted-until-hover xs-hide sm-mr1" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<div class="btn dropdown" style="margin-top: -3px;">
+<span class="h3 muted-until-hover">
+<i class="fa fa-sort-down relative xs-hide" style="top: -2px; margin-right: 2px;"></i>
+</span>
+<span class="muted-until-hover xs-ml3">
+<span class="xs-hide">More</span>
+Tips
+</span>
+<div class="dropdown-content bg-white mt1 py1 border z4" style="left:0">
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn py1 muted-until-hover md-hide nowrap" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/php/popular">PHP</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/android/popular">Andriod</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/dot-net/popular">.NET</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/java/popular">Java</a>
+<a class="btn py1 muted-until-hover green md-hide" href="https://coderwall.com/jobs">Jobs</a>
+</div>
+</div>
+<a class="btn border-left xs-hide sm-only-hide" href="https://coderwall.com/jobs">
+<div class="green">Jobs</div>
+</a>
+</div>
+<div class="col col-5 sm-col-3 md-col-2">
+<div class="right pr2">
+<a class="btn btn-primary bg-purple white ml1" href="https://coderwall.com/signin">Sign In or Up</a>
+</div>
+</div>
+</nav>
+</header>
+
+
+<div class="mt1 px3">
+
+</div>
+<main>
+<div class="py2 px3"><div class="container protip" id="protip_88873" itemid="88873" itemscope="">
+<div class="hide"><time datetime="2016-03-02T03:19:28Z" itemprop="dateModified">March 02, 2016 03:19</time></div>
+<div class="hide" itemprop="name">sy1qcw</div>
+<div class="clearfix">
+<div class="sm-col sm-col sm-col-12 md-col-8">
+<div class="clearfix mt0 mb1">
+<div class="sm-right">
+<div class="diminish inline mr1">Last Updated: March 02, 2016</div>
+<span class="xs-hide">
+·
+<div class="diminish inline mx1">
+<i class="fa fa-eye"></i>
+55.15K
+</div>
+</span>
+·
+<span class="mx1"><a href="https://coderwall.com/jwwest">jwwest</a></span>
+<div class="avatar" itemprop="image" style="background-color: #f42d05;"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/giant_guitar.png" alt="Giant guitar"></div>
+</div>
+</div>
+<div class="card p1" style="border-top:solid 5px #f42d05">
+<h1 class="mt4 mb2 center" itemprop="headline">Setting up ElasticSearch with MongoDB</h1>
+<div class="center mr1" itemprop="keywords">
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/mongodb/popular">mongodb</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/elasticsearch/popular">elasticsearch</a></h6>
+</div>
+<div class="content p3 mt4" itemprop="articleBody">
+<p>I've recently set up an instance of ElasticSearch indexing data from MongoDB. I thought it would be helpful to others to put my notes online since I spent hours collating instructions from various sites.</p>
+
+<p>Generally speaking, the ElasticSearch documentation sucks. It assumes a level of familiarity with search indexing out of the box that the average dev doesn't have. Setting up ES or Solr or Sphinx is very much a system administration chore, and configuring it is a discipline on its own.</p>
+
+<h2>The Environment</h2>
+
+<p>I used EC2 running an Unbuntu instance, so my notes are pretty specific to that environment. Wherever possible, I used the built-in package manager (apt/aptitude) and service manager (Upstart).</p>
+
+<h2>MongoDB</h2>
+
+<p>If you're not starting from scratch, you can skip this section as it pertains to installing Mongo.</p>
+
+<p>To get Mongo up and running on Ubuntu, you will need to follow the excellent directions on <a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/" rel="nofollow">10gen's site</a>. </p>
+
+<p>You're going to be adding another upstream for apt, then pulling down and installing the mongod service into Upstart. Don't worry, apt takes care of doing all of this for you.</p>
+
+<p>Don't try to skip this step. While the default Ubuntu apt package library contains Mongo, it's a really old version. I've had this bite me before.</p>
+
+<h2>Configure Mongo as a replica set</h2>
+
+<p>Even if you're running a standalone Mongo instance, you're going to need to convert it into a replica set. The reason is that the ElasticSearch plugin depends on the operation log (or 'oplog', a log of all changes used by Mongo to replicate itself) to push new updates into ElasticSearch. Mongo lacks built-in support for triggers, so this is the next best thing.</p>
+
+<p>Again, <a href="http://docs.mongodb.org/manual/tutorial/convert-standalone-to-replica-set/" rel="nofollow">follow the instructions here</a> to convert your instance. However, ignore the line about starting it with the <code class="prettyprint prettyprinted"><span class="pun">-</span><span class="pln">replSet</span></code> command line. Since we're running as a service, edit <code class="prettyprint prettyprinted"><span class="str">/etc/</span><span class="pln">mongod</span><span class="pun">.</span><span class="pln">conf</span></code> to include the <code class="prettyprint prettyprinted"><span class="pln">replSet</span></code> parameter. It doesn't matter what you name your replication set, just that you remember it and are consistent with it.</p>
+
+<p>You can find more information about the Mongo configuration file <a href="http://docs.mongodb.org/manual/reference/configuration-options/" rel="nofollow">here</a>.</p>
+
+<h2>Installing ElasticSearch</h2>
+
+<p>I found this <a href="https://gist.github.com/wingdspur/2026107" rel="nofollow">gist</a> to be invaluable in getting the lastest version of ES up and running on my system. It'll first install a Java runtime, followed by ES and then a simple service wrapper.</p>
+
+<p>After you've installed ES, and confirmed it's working by sending an HTTP request to <code class="prettyprint prettyprinted"><span class="pln">localhost</span><span class="pun">:</span><span class="lit">9200</span></code>, you have to install two plugins to enable support for MongoDB.</p>
+
+<p>The first is a dependency called Mapper Attachments. You can install via the ES plugin script:</p>
+
+<p><code class="prettyprint prettyprinted"><span class="pln">$ES_HOME</span><span class="pun">/</span><span class="pln">bin</span><span class="pun">/</span><span class="pln">plugin </span><span class="pun">-</span><span class="pln">install elasticsearch</span><span class="pun">/</span><span class="pln">elasticsearch</span><span class="pun">-</span><span class="pln">mapper</span><span class="pun">-</span><span class="pln">attachments</span><span class="pun">/</span><span class="lit">1.6</span><span class="pun">.</span><span class="lit">0</span></code></p>
+
+<p>$ES_HOME is wherever ES is installed. If you followed the instructions above, it'll be in <code class="prettyprint prettyprinted"><span class="str">/usr/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">share</span><span class="pun">/</span><span class="pln">elasticsearch</span></code>.</p>
+
+<p>The second plugin is the ES 'river' for Mongo. The syntax to install it is slightly different as it's a third-party plugin:</p>
+
+<p><code class="prettyprint prettyprinted"><span class="pln">plugin </span><span class="pun">-</span><span class="pln">url https</span><span class="pun">:</span><span class="com">//github.com/downloads/richardwilly98/elasticsearch-river-mongodb/elasticsearch-river-mongodb-1.6.1.zip -install river-mongodb</span></code></p>
+
+<p>Once those two plugins are successfully installed, you should be ready to go. Restart the ES service before proceeding to configuration just in case.</p>
+
+<h2>Configuring ElasticSearch</h2>
+
+<p>I don't want to go too deep into setting up your search index here. It's a very rich topic with lots of stuff specific to your data. The default analyzers that ES uses are pretty good anyway, so let's look at how you drive this thing.</p>
+
+<p>You create and manage indexes in ES via a RESTful interface. The easiest way I've found is using <code class="prettyprint prettyprinted"><span class="pln">curl</span></code> inside of bash scripts to send JSON payloads which will instruct ES on how to look at our data.</p>
+
+<p>Example:</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="com">#!/bin/sh</span><span class="pln">
+curl </span><span class="pun">-</span><span class="pln">XPUT </span><span class="str">"localhost:9200/_river/ffxi/_meta"</span><span class="pln"> </span><span class="pun">-</span><span class="pln">d </span><span class="str">'
+{
+  "type": "mongodb",
+  "mongodb": {
+    "servers": [
+      { "host": "127.0.0.1", "port": 27017 }
+    ],
+    "options": { "secondary_read_preference": true },
+    "db": "ffxi",
+    "collection": "pages"
+  },
+  "index": {
+    "name": "pagesidx",
+    "type": "page"
+  }
+}'</span></code></pre>
+
+<p>Notice that the url contains <code class="prettyprint prettyprinted"><span class="pln">_river</span></code>. This is a small difference you'll notice when using 'river' plugins, that is non-native support for databases. This format is only for setting up and configuring an index however. When you query, it'll look more like:</p>
+
+<p><code class="prettyprint prettyprinted"><span class="pln">curl </span><span class="pun">-</span><span class="pln">XGET </span><span class="str">'localhost:9200/pagesidx/_search?q=param1</span></code></p>
+</div>
+<div class="clearfix mt1 mb3 mx2 py2">
+<div class="clearfix border-bottom" itemprop="author">
+<h4>
+Written by
+<a class="bold user" href="https://coderwall.com/jwwest" id="user_16450" itemid="16450" itemscope="" itemtype="http://schema.org/Person">
+<span class="blue" itemprop="name">James West</span>
+</a>
+</h4>
+</div>
+<div class="clearfix mt1">
+<div class="btn btn-small pl0 mr1 mb1 xs-block">
+<div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;location&quot;:&quot;/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;coderwall.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:&quot;en-US,en;q=0.8&quot;,&quot;pusherKey&quot;:&quot;56c8c9e2d013d4e9f315&quot;,&quot;user&quot;:null,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;protip_88873&quot;,&quot;href&quot;:&quot;/p/sy1qcw/likes&quot;,&quot;labels&quot;:[&quot;Recommend&quot;,&quot;Recommended&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-36b8d95f-9955-4392-83c3-543cc3d35b9c"></div>
+    <div id="HeartButton-react-component-36b8d95f-9955-4392-83c3-543cc3d35b9c"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1">Recommend</span></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="http://twitter.com/home?status=Setting+up+ElasticSearch+with+MongoDB+by+%40jwwest%0A%0Ahttps%3A%2F%2Fcoderwall.com%2Fp%2Fsy1qcw" target="twitter">
+<span class="fixed-space-4"><i class="fa fa-twitter aqua h4"></i></span>
+<span>Say Thanks</span>
+</a>
+<div class="btn btn-small pl0 mb1 mr1 xs-block">
+<div class="js-react-on-rails-component" style="display:none" data-component-name="ProtipSubscribeButton" data-props="{}" data-trace="false" data-dom-id="ProtipSubscribeButton-react-component-2de409a6-d119-49b9-8d10-d472bb61e1b4"></div>
+    <div id="ProtipSubscribeButton-react-component-2de409a6-d119-49b9-8d10-d472bb61e1b4"><div data-reactroot="" class="inline pointer"><span class="fixed-space-4"><i class="fa fa-bell-slash-o"></i></span><!-- react-text: 4 -->Update Notifications Off<!-- /react-text --></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="https://coderwall.com/signup">
+<span class="fixed-space-4"><i class="fa fa-comment-o black h4"></i></span>
+Respond
+</a>
+</div>
+</div>
+<div class="clearfix">
+<div class="clearfix mt3 px2">
+<h4>
+8 Responses
+<div class="right hide">
+<div class="btn btn-small green">Add your response</div>
+</div>
+</h4>
+<div class="border-top comment inline-block mb1 py1" id="comment_6421" itemid="6421" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2013-05-14T22:35:05Z" itemprop="datePublished">May 14, 2013 22:35</time></div>
+<div class="hide" itemprop="name">6421</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #830164;">
+
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/ocnvn" itemprop="alternateName">
+ocnvn
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Hi, thanks for this tutorial, just one question which version of every software are you using?</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_6421&quot;,&quot;href&quot;:&quot;/comments/6421/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-5e7932ff-a76b-4c14-8574-ebb58dfa66d0"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-5e7932ff-a76b-4c14-8574-ebb58dfa66d0"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_8296" itemid="8296" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2013-08-01T12:06:07Z" itemprop="datePublished">August 01, 2013 12:06</time></div>
+<div class="hide" itemprop="name">8296</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #b43d92;">
+
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/maziyar_sh" itemprop="alternateName">
+maziyar_sh
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Hi, thanks for the  tutorial. Since you are using Elasticsearch, how is that different from its built-in full-text search MongoDB has?</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_8296&quot;,&quot;href&quot;:&quot;/comments/8296/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-3f3d003f-81c5-4b69-a372-175a14677f4e"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-3f3d003f-81c5-4b69-a372-175a14677f4e"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_8732" itemid="8732" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2013-08-21T11:54:34Z" itemprop="datePublished">August 21, 2013 11:54</time></div>
+<div class="hide" itemprop="name">8732</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #145e96;">
+<img src="./Setting up ElasticSearch with MongoDB (Example)_files/aa59fd644fa331fde349e53d2006fc0a.jpg" alt="Aa59fd644fa331fde349e53d2006fc0a">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/richardwilly98" itemprop="alternateName">
+richardwilly98
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Hi,</p>
+
+<p>MongoDB is a datastore not initially designed to do full-text search. This feature is just been released recently (still in beta). I don't believe you should expect this feature matching Elasticsearch.</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_8732&quot;,&quot;href&quot;:&quot;/comments/8732/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-69e756ff-04b6-4417-86be-a69788b72ac1"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-69e756ff-04b6-4417-86be-a69788b72ac1"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_8733" itemid="8733" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2013-08-21T12:02:49Z" itemprop="datePublished">August 21, 2013 12:02</time></div>
+<div class="hide" itemprop="name">8733</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #145e96;">
+<img src="./Setting up ElasticSearch with MongoDB (Example)_files/aa59fd644fa331fde349e53d2006fc0a.jpg" alt="Aa59fd644fa331fde349e53d2006fc0a">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/richardwilly98" itemprop="alternateName">
+richardwilly98
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Hi,</p>
+
+<p>I would suggest to check the version matrix available here [1] to make sure you are using the correct version of the river.</p>
+
+<p>[1] - <a href="https://github.com/richardwilly98/elasticsearch-river-mongodb#mongodb-river-plugin-for-elasticsearch" rel="nofollow">https://github.com/richardwilly98/elasticsearch-river-mongodb#mongodb-river-plugin-for-elasticsearch</a></p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_8733&quot;,&quot;href&quot;:&quot;/comments/8733/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-bcf28bc3-2f35-4884-9fa8-5ced8806af43"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-bcf28bc3-2f35-4884-9fa8-5ced8806af43"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12095" itemid="12095" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-01-15T20:02:01Z" itemprop="datePublished">January 15, 2014 20:02</time></div>
+<div class="hide" itemprop="name">12095</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #9f879b;">
+
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/mjlevitt" itemprop="alternateName">
+mjlevitt
+</a>
+</div>
+<div class="content small" itemprop="text"><p>There are no date stamps on this article nor the comments.  Can someone please tell me, when was this posted? ES info seems to be a moving, emerging topic, and I want to know how current this is.</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_12095&quot;,&quot;href&quot;:&quot;/comments/12095/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-cbfb18c1-5d67-4a31-9cf0-15c53980004d"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-cbfb18c1-5d67-4a31-9cf0-15c53980004d"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_15059" itemid="15059" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-06-09T17:59:42Z" itemprop="datePublished">June 09, 2014 17:59</time></div>
+<div class="hide" itemprop="name">15059</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #cf8842;">
+<img src="./Setting up ElasticSearch with MongoDB (Example)_files/9ca963270406570c3d4f832af90bded5.jpeg" alt="9ca963270406570c3d4f832af90bded5">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/mattjanssen" itemprop="alternateName">
+mattjanssen
+</a>
+</div>
+<div class="content small" itemprop="text"><p>When was this article published?</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_15059&quot;,&quot;href&quot;:&quot;/comments/15059/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-64aa3fc8-b435-4052-a415-837e1c3a0bb1"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-64aa3fc8-b435-4052-a415-837e1c3a0bb1"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_15526" itemid="15526" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-07-08T01:09:19Z" itemprop="datePublished">July 08, 2014 01:09</time></div>
+<div class="hide" itemprop="name">15526</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #285327;">
+<img src="./Setting up ElasticSearch with MongoDB (Example)_files/3gpywax9l3b5w4ca8bgj_normal.jpeg" alt="3gpywax9l3b5w4ca8bgj normal">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/rkroondotnet" itemprop="alternateName">
+rkroondotnet
+</a>
+</div>
+<div class="content small" itemprop="text"><p>It is now the 7th of July, 2014. The article's version numbers are now somewhat out of date. The working versions I have found are as follows:<br>
+MongoDB v2.4.9 (current installation of mongodb, this was the driving force in choosing the others)<br>
+ElasticSearch v1.1.1<br>
+ElasticSearchMapperAttachments v2.0.0<br>
+ElasticSearchRiverMongoDb/2.0.0</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_15526&quot;,&quot;href&quot;:&quot;/comments/15526/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-ac8e955d-82f3-43da-b251-897d520bb533"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-ac8e955d-82f3-43da-b251-897d520bb533"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_17961" itemid="17961" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2015-01-03T16:01:09Z" itemprop="datePublished">January 03, 2015 16:01</time></div>
+<div class="hide" itemprop="name">17961</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #e4d87c;">
+<img src="./Setting up ElasticSearch with MongoDB (Example)_files/none.jpg" alt="None">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/ansup" itemprop="alternateName">
+ansup
+</a>
+</div>
+<div class="content small" itemprop="text"><p>I am trying this tutorial , but in my data folder in Elastic search, No indices are created but a _river folder is created. When i am querying the indices there is no output.</p>
+
+<p>Any help ?</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<div class="js-react-on-rails-component" style="display:none" data-component-name="HeartButton" data-props="{&quot;heartableId&quot;:&quot;comment_17961&quot;,&quot;href&quot;:&quot;/comments/17961/likes&quot;,&quot;labels&quot;:[&quot;&quot;,&quot;&quot;]}" data-trace="false" data-dom-id="HeartButton-react-component-d3393dbb-ba79-4b24-9803-8b764ee8c305"></div>
+    <div style="display:inline-block" id="HeartButton-react-component-d3393dbb-ba79-4b24-9803-8b764ee8c305"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sm-col sm-col sm-col-12 md-col-4">
+<div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://coderwall.com/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;location&quot;:&quot;/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;coderwall.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/p/sy1qcw/setting-up-elasticsearch-with-mongodb&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:&quot;en-US,en;q=0.8&quot;,&quot;pusherKey&quot;:&quot;56c8c9e2d013d4e9f315&quot;,&quot;user&quot;:null,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="Sponsors" data-props="{}" data-trace="false" data-dom-id="Sponsors-react-component-5660ed4b-3269-49a4-862d-ad5109281bc5"></div>
+    <div id="Sponsors-react-component-5660ed4b-3269-49a4-862d-ad5109281bc5"><div data-reactroot="" class="clearfix sm-ml3 mt3 p1"><h5 class="mt0 mb1"><i class="fa fa-hand-o-right mr1"></i><!-- react-text: 5 -->Sponsors<!-- /react-text --></h5><hr class="mt1"><div class="clearfix py1"><div><a class="link no-hover" href="https://srv.buysellads.com/ads/click/x/GTND4237CWSDTKJ7CK7LYKQWF6BIKK7EC6AIVZ3JCEAIP27MCTBDEK7KC6BDL2QNCV7IKK3EHJNCLSIZ" rel="nofollow noopener noreferrer" target="_blank"><div class="col col-3 md-col-2"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/38888" class="mt-third" role="presentation"></div><div class="overflow-hidden pl2"><div class="blue bold">Toptal</div><div class="font-sm black mt-third"><!-- react-text: 15 -->Toptal matches you with top developers who are guaranteed to succeed.<!-- /react-text --><img src="./Setting up ElasticSearch with MongoDB (Example)_files/11384-6849-111" width="1" height="1" role="presentation" style="display: none;"></div></div></a></div></div><div class="clearfix py1"><div><a class="link no-hover" href="https://srv.buysellads.com/ads/click/x/GTND4237CWSDTKJ7CK7LYKQWF6BIKK7UCAYI6Z3JCEAIP2QNCAYIC53KC6BDL2QNCV7IKK3EHJNCLSIZ" rel="nofollow noopener noreferrer" target="_blank"><div class="col col-3 md-col-2"><img src="./Setting up ElasticSearch with MongoDB (Example)_files/38635" class="mt-third" role="presentation"></div><div class="overflow-hidden pl2"><div class="blue bold">Know when and why code breaks</div><div class="font-sm black mt-third"><!-- react-text: 25 -->Users finding bugs? Searching logs for errors? Find + fix broken code fast!<!-- /react-text --><img src="./Setting up ElasticSearch with MongoDB (Example)_files/11384-6759-111" width="1" height="1" role="presentation" style="display: none;"></div></div></a></div></div></div></div>
+    
+
+<div class="clearfix sm-ml3 mt3 p1">
+<div class="clearfix">
+<div class="col col-7">
+<h5 class="mt0">
+<i class="fa fa-diamond mr1"></i>
+Awesome Job
+</h5>
+</div>
+<div class="col col-5">
+<div class="right font-sm bold">
+<a class="block" href="https://coderwall.com/jobs">
+See All Jobs
+<i class="fa fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<hr>
+<div class="clearfix py1">
+<a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="De Jong DUKE - 08bec2d6-2e83-11e7-82bc-c893eb9f2583" href="https://dejonggroep.redirect.your-jobresponse.com/full_stack_webdeveloper_sliedrecht/145435/V819/solliciteren" rel="nofollow" target="_blank">
+<div class="col col-3 md-col-2">
+<img class="" src="./Setting up ElasticSearch with MongoDB (Example)_files/03502a06-2e83-11e7-9fee-b34b98dcd7f3.jpg" alt="03502a06 2e83 11e7 9fee b34b98dcd7f3">
+</div>
+</a><div class="overflow-hidden pl2"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="De Jong DUKE - 08bec2d6-2e83-11e7-82bc-c893eb9f2583" href="https://dejonggroep.redirect.your-jobresponse.com/full_stack_webdeveloper_sliedrecht/145435/V819/solliciteren" rel="nofollow" target="_blank">
+<div class="blue bold">
+Full-stack Webdeveloper
+</div>
+</a><div class="font-sm black"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="De Jong DUKE - 08bec2d6-2e83-11e7-82bc-c893eb9f2583" href="https://dejonggroep.redirect.your-jobresponse.com/full_stack_webdeveloper_sliedrecht/145435/V819/solliciteren" rel="nofollow" target="_blank">
+</a><div class="inline"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="De Jong DUKE - 08bec2d6-2e83-11e7-82bc-c893eb9f2583" href="https://dejonggroep.redirect.your-jobresponse.com/full_stack_webdeveloper_sliedrecht/145435/V819/solliciteren" rel="nofollow" target="_blank"></a><a rel="nofollow" target="_blank" ga-event-category="Jobs" ga-event-action="Protip Sidebar - Featured Job" ga-event-label="De Jong DUKE - 08bec2d6-2e83-11e7-82bc-c893eb9f2583" href="http://[klik%20hier%20voor%20het%20sollicitatieformulier%21]%28https//dejonggroep.redirect.your-jobresponse.com/full_stack_webdeveloper_sliedrecht/145435/V819/solliciteren)">De Jong DUKE</a></div>
+·
+<div class="inline">Sliedrecht</div>
+·
+<div class="inline">Full Time</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt2 font-sm">
+<a class="border--green green bold" href="https://coderwall.com/jobs/new">
+Post a job for only
+$299
+</a>
+</div>
+</div>
+<div class="clearfix ml3 mt4" ga-location="Protip Sidebar">
+<div class="bsap bsap_1305410" id="bsap_1305410" data-serve="CVADVK7E"><!-- no ad -->
+<script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+<footer class="border-top">
+<nav class="clearfix">
+<div class="col col-4 py1 mt1">
+<a class="btn" href="https://twitter.com/coderwall" target="_blank">
+@coderwall
+<i class="fa fa-twitter fa-1x ml1"></i>
+</a>
+</div>
+<div class="col col-8 py2 mt1">
+<div class="right">
+<a class="inline-block ml1" href="https://github.com/coderwall/coderwall-next" rel="nofollow">
+<i class="fa fa-github-alt"></i>
+</a>
+<a class="inline-block ml1" href="https://coderwall.com/t/hackerdesk/popular">
+<div class="sm-show"><i class="fa fa-gift"></i></div>
+</a>
+<a class="inline-block ml1 mr1" href="mailto:support@coderwall.com">
+Contact
+</a>
+<a class="inline-block mr1" href="https://coderwall.com/privacy_policy">Privacy</a>
+<a class="inline-block mr1" href="https://coderwall.com/tos">Terms</a>
+<p class="inline-block diminish inline mr1">Copyright 2017</p>
+</div>
+</div>
+</nav>
+</footer>
+</div>
+<div class="js-react-on-rails-store" style="display:none" data-store-name="store" data-props="{&quot;currentUser&quot;:{&quot;item&quot;:null},&quot;currentProtip&quot;:{&quot;item&quot;:{&quot;id&quot;:88873,&quot;body&quot;:&quot;I&#39;ve recently set up an instance of ElasticSearch indexing data from MongoDB. I thought it would be helpful to others to put my notes online since I spent hours collating instructions from various sites.\r\n\r\nGenerally speaking, the ElasticSearch documentation sucks. It assumes a level of familiarity with search indexing out of the box that the average dev doesn&#39;t have. Setting up ES or Solr or Sphinx is very much a system administration chore, and configuring it is a discipline on its own.\r\n\r\n## The Environment\r\nI used EC2 running an Unbuntu instance, so my notes are pretty specific to that environment. Wherever possible, I used the built-in package manager (apt/aptitude) and service manager (Upstart).\r\n\r\n## MongoDB\r\nIf you&#39;re not starting from scratch, you can skip this section as it pertains to installing Mongo.\r\n\r\nTo get Mongo up and running on Ubuntu, you will need to follow the excellent directions on [10gen&#39;s site](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/). \r\n\r\nYou&#39;re going to be adding another upstream for apt, then pulling down and installing the mongod service into Upstart. Don&#39;t worry, apt takes care of doing all of this for you.\r\n\r\nDon&#39;t try to skip this step. While the default Ubuntu apt package library contains Mongo, it&#39;s a really old version. I&#39;ve had this bite me before.\r\n\r\n## Configure Mongo as a replica set\r\nEven if you&#39;re running a standalone Mongo instance, you&#39;re going to need to convert it into a replica set. The reason is that the ElasticSearch plugin depends on the operation log (or &#39;oplog&#39;, a log of all changes used by Mongo to replicate itself) to push new updates into ElasticSearch. Mongo lacks built-in support for triggers, so this is the next best thing.\r\n\r\nAgain, [follow the instructions here](http://docs.mongodb.org/manual/tutorial/convert-standalone-to-replica-set/) to convert your instance. However, ignore the line about starting it with the `-replSet` command line. Since we&#39;re running as a service, edit `/etc/mongod.conf` to include the `replSet` parameter. It doesn&#39;t matter what you name your replication set, just that you remember it and are consistent with it.\r\n\r\nYou can find more information about the Mongo configuration file [here](http://docs.mongodb.org/manual/reference/configuration-options/).\r\n\r\n## Installing ElasticSearch\r\nI found this [gist](https://gist.github.com/wingdspur/2026107) to be invaluable in getting the lastest version of ES up and running on my system. It&#39;ll first install a Java runtime, followed by ES and then a simple service wrapper.\r\n\r\nAfter you&#39;ve installed ES, and confirmed it&#39;s working by sending an HTTP request to `localhost:9200`, you have to install two plugins to enable support for MongoDB.\r\n\r\nThe first is a dependency called Mapper Attachments. You can install via the ES plugin script:\r\n\r\n`$ES_HOME/bin/plugin -install elasticsearch/elasticsearch-mapper-attachments/1.6.0`\r\n\r\n$ES_HOME is wherever ES is installed. If you followed the instructions above, it&#39;ll be in `/usr/local/share/elasticsearch`.\r\n\r\nThe second plugin is the ES &#39;river&#39; for Mongo. The syntax to install it is slightly different as it&#39;s a third-party plugin:\r\n\r\n`plugin -url https://github.com/downloads/richardwilly98/elasticsearch-river-mongodb/elasticsearch-river-mongodb-1.6.1.zip -install river-mongodb`\r\n\r\nOnce those two plugins are successfully installed, you should be ready to go. Restart the ES service before proceeding to configuration just in case.\r\n\r\n## Configuring ElasticSearch\r\nI don&#39;t want to go too deep into setting up your search index here. It&#39;s a very rich topic with lots of stuff specific to your data. The default analyzers that ES uses are pretty good anyway, so let&#39;s look at how you drive this thing.\r\n\r\nYou create and manage indexes in ES via a RESTful interface. The easiest way I&#39;ve found is using `curl` inside of bash scripts to send JSON payloads which will instruct ES on how to look at our data.\r\n\r\nExample:\r\n\r\n    #!/bin/sh\r\n    curl -XPUT \&quot;localhost:9200/_river/ffxi/_meta\&quot; -d &#39;\r\n    {\r\n      \&quot;type\&quot;: \&quot;mongodb\&quot;,\r\n      \&quot;mongodb\&quot;: {\r\n        \&quot;servers\&quot;: [\r\n          { \&quot;host\&quot;: \&quot;127.0.0.1\&quot;, \&quot;port\&quot;: 27017 }\r\n        ],\r\n        \&quot;options\&quot;: { \&quot;secondary_read_preference\&quot;: true },\r\n        \&quot;db\&quot;: \&quot;ffxi\&quot;,\r\n        \&quot;collection\&quot;: \&quot;pages\&quot;\r\n      },\r\n      \&quot;index\&quot;: {\r\n        \&quot;name\&quot;: \&quot;pagesidx\&quot;,\r\n        \&quot;type\&quot;: \&quot;page\&quot;\r\n      }\r\n    }&#39;\r\n\r\nNotice that the url contains `_river`. This is a small difference you&#39;ll notice when using &#39;river&#39; plugins, that is non-native support for databases. This format is only for setting up and configuring an index however. When you query, it&#39;ll look more like:\r\n\r\n`curl -XGET &#39;localhost:9200/pagesidx/_search?q=param1`&quot;,&quot;created_at&quot;:&quot;2013-03-12T16:10:54.711Z&quot;,&quot;heartableId&quot;:&quot;protip_88873&quot;,&quot;hearts&quot;:33,&quot;html&quot;:&quot;\u003cp\u003eI&#39;ve recently set up an instance of ElasticSearch indexing data from MongoDB. I thought it would be helpful to others to put my notes online since I spent hours collating instructions from various sites.\u003c/p\u003e\n\n\u003cp\u003eGenerally speaking, the ElasticSearch documentation sucks. It assumes a level of familiarity with search indexing out of the box that the average dev doesn&#39;t have. Setting up ES or Solr or Sphinx is very much a system administration chore, and configuring it is a discipline on its own.\u003c/p\u003e\n\n\u003ch2\u003eThe Environment\u003c/h2\u003e\n\n\u003cp\u003eI used EC2 running an Unbuntu instance, so my notes are pretty specific to that environment. Wherever possible, I used the built-in package manager (apt/aptitude) and service manager (Upstart).\u003c/p\u003e\n\n\u003ch2\u003eMongoDB\u003c/h2\u003e\n\n\u003cp\u003eIf you&#39;re not starting from scratch, you can skip this section as it pertains to installing Mongo.\u003c/p\u003e\n\n\u003cp\u003eTo get Mongo up and running on Ubuntu, you will need to follow the excellent directions on \u003ca href=\&quot;http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/\&quot; rel=\&quot;nofollow\&quot;\u003e10gen&#39;s site\u003c/a\u003e. \u003c/p\u003e\n\n\u003cp\u003eYou&#39;re going to be adding another upstream for apt, then pulling down and installing the mongod service into Upstart. Don&#39;t worry, apt takes care of doing all of this for you.\u003c/p\u003e\n\n\u003cp\u003eDon&#39;t try to skip this step. While the default Ubuntu apt package library contains Mongo, it&#39;s a really old version. I&#39;ve had this bite me before.\u003c/p\u003e\n\n\u003ch2\u003eConfigure Mongo as a replica set\u003c/h2\u003e\n\n\u003cp\u003eEven if you&#39;re running a standalone Mongo instance, you&#39;re going to need to convert it into a replica set. The reason is that the ElasticSearch plugin depends on the operation log (or &#39;oplog&#39;, a log of all changes used by Mongo to replicate itself) to push new updates into ElasticSearch. Mongo lacks built-in support for triggers, so this is the next best thing.\u003c/p\u003e\n\n\u003cp\u003eAgain, \u003ca href=\&quot;http://docs.mongodb.org/manual/tutorial/convert-standalone-to-replica-set/\&quot; rel=\&quot;nofollow\&quot;\u003efollow the instructions here\u003c/a\u003e to convert your instance. However, ignore the line about starting it with the \u003ccode class=\&quot;prettyprint\&quot;\u003e-replSet\u003c/code\u003e command line. Since we&#39;re running as a service, edit \u003ccode class=\&quot;prettyprint\&quot;\u003e/etc/mongod.conf\u003c/code\u003e to include the \u003ccode class=\&quot;prettyprint\&quot;\u003ereplSet\u003c/code\u003e parameter. It doesn&#39;t matter what you name your replication set, just that you remember it and are consistent with it.\u003c/p\u003e\n\n\u003cp\u003eYou can find more information about the Mongo configuration file \u003ca href=\&quot;http://docs.mongodb.org/manual/reference/configuration-options/\&quot; rel=\&quot;nofollow\&quot;\u003ehere\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2\u003eInstalling ElasticSearch\u003c/h2\u003e\n\n\u003cp\u003eI found this \u003ca href=\&quot;https://gist.github.com/wingdspur/2026107\&quot; rel=\&quot;nofollow\&quot;\u003egist\u003c/a\u003e to be invaluable in getting the lastest version of ES up and running on my system. It&#39;ll first install a Java runtime, followed by ES and then a simple service wrapper.\u003c/p\u003e\n\n\u003cp\u003eAfter you&#39;ve installed ES, and confirmed it&#39;s working by sending an HTTP request to \u003ccode class=\&quot;prettyprint\&quot;\u003elocalhost:9200\u003c/code\u003e, you have to install two plugins to enable support for MongoDB.\u003c/p\u003e\n\n\u003cp\u003eThe first is a dependency called Mapper Attachments. You can install via the ES plugin script:\u003c/p\u003e\n\n\u003cp\u003e\u003ccode class=\&quot;prettyprint\&quot;\u003e$ES_HOME/bin/plugin -install elasticsearch/elasticsearch-mapper-attachments/1.6.0\u003c/code\u003e\u003c/p\u003e\n\n\u003cp\u003e$ES_HOME is wherever ES is installed. If you followed the instructions above, it&#39;ll be in \u003ccode class=\&quot;prettyprint\&quot;\u003e/usr/local/share/elasticsearch\u003c/code\u003e.\u003c/p\u003e\n\n\u003cp\u003eThe second plugin is the ES &#39;river&#39; for Mongo. The syntax to install it is slightly different as it&#39;s a third-party plugin:\u003c/p\u003e\n\n\u003cp\u003e\u003ccode class=\&quot;prettyprint\&quot;\u003eplugin -url https://github.com/downloads/richardwilly98/elasticsearch-river-mongodb/elasticsearch-river-mongodb-1.6.1.zip -install river-mongodb\u003c/code\u003e\u003c/p\u003e\n\n\u003cp\u003eOnce those two plugins are successfully installed, you should be ready to go. Restart the ES service before proceeding to configuration just in case.\u003c/p\u003e\n\n\u003ch2\u003eConfiguring ElasticSearch\u003c/h2\u003e\n\n\u003cp\u003eI don&#39;t want to go too deep into setting up your search index here. It&#39;s a very rich topic with lots of stuff specific to your data. The default analyzers that ES uses are pretty good anyway, so let&#39;s look at how you drive this thing.\u003c/p\u003e\n\n\u003cp\u003eYou create and manage indexes in ES via a RESTful interface. The easiest way I&#39;ve found is using \u003ccode class=\&quot;prettyprint\&quot;\u003ecurl\u003c/code\u003e inside of bash scripts to send JSON payloads which will instruct ES on how to look at our data.\u003c/p\u003e\n\n\u003cp\u003eExample:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\&quot;prettyprint\&quot;\u003e#!/bin/sh\ncurl -XPUT \&quot;localhost:9200/_river/ffxi/_meta\&quot; -d &#39;\n{\n  \&quot;type\&quot;: \&quot;mongodb\&quot;,\n  \&quot;mongodb\&quot;: {\n    \&quot;servers\&quot;: [\n      { \&quot;host\&quot;: \&quot;127.0.0.1\&quot;, \&quot;port\&quot;: 27017 }\n    ],\n    \&quot;options\&quot;: { \&quot;secondary_read_preference\&quot;: true },\n    \&quot;db\&quot;: \&quot;ffxi\&quot;,\n    \&quot;collection\&quot;: \&quot;pages\&quot;\n  },\n  \&quot;index\&quot;: {\n    \&quot;name\&quot;: \&quot;pagesidx\&quot;,\n    \&quot;type\&quot;: \&quot;page\&quot;\n  }\n}&#39;\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eNotice that the url contains \u003ccode class=\&quot;prettyprint\&quot;\u003e_river\u003c/code\u003e. This is a small difference you&#39;ll notice when using &#39;river&#39; plugins, that is non-native support for databases. This format is only for setting up and configuring an index however. When you query, it&#39;ll look more like:\u003c/p\u003e\n\n\u003cp\u003e\u003ccode class=\&quot;prettyprint\&quot;\u003ecurl -XGET &#39;localhost:9200/pagesidx/_search?q=param1\u003c/code\u003e\u003c/p\u003e\n&quot;,&quot;public_id&quot;:&quot;sy1qcw&quot;,&quot;subscribed&quot;:false,&quot;tags&quot;:[&quot;mongodb&quot;,&quot;elasticsearch&quot;],&quot;title&quot;:&quot;Setting up ElasticSearch with MongoDB&quot;,&quot;upvotes&quot;:33}},&quot;comments&quot;:{&quot;items&quot;:[{&quot;id&quot;:6421,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_6421&quot;},{&quot;id&quot;:8296,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_8296&quot;},{&quot;id&quot;:8732,&quot;hearts&quot;:2,&quot;heartableId&quot;:&quot;comment_8732&quot;},{&quot;id&quot;:8733,&quot;hearts&quot;:1,&quot;heartableId&quot;:&quot;comment_8733&quot;},{&quot;id&quot;:12095,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_12095&quot;},{&quot;id&quot;:15059,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_15059&quot;},{&quot;id&quot;:15526,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_15526&quot;},{&quot;id&quot;:17961,&quot;hearts&quot;:0,&quot;heartableId&quot;:&quot;comment_17961&quot;}]}}"></div>
+  <script>
+    // perfectaudience
+    (function () {
+        window._pa = window._pa || {};
+        var pa = document.createElement('script');
+        pa.type = 'text/javascript';
+        pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/50775e2d30a1d50002000221.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(pa, s);
+    })();    
+  </script>
+
+
+
+</body></html>

@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-left{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.8);
+            z-index: 20;
+        }
+        #arrow-right{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 120px solid rgba(215,71,1,0.5);
+            z-index: 20;
+        }
+        img#videoIconLeft  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+        img#videoIconRight  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+
+    */
+        .edgeLoad-EDGE-14859374 { visibility:hidden; }
+
+
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+    <link rel="stylesheet" href="css/scrollbar.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+    
+
+    <div id="destiny_dynamic_006" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+
+
+            <div id="Stage" class="EDGE-14859374">
+
+                <div id="Stage_pop_up_menu" class="edgeLoad-EDGE-14859374 menuContent">
+                    <div id="Stage_pop_up_menu_side_menu" class="side_menu">
+                        <div id="Stage_pop_up_menu_side_menu_pre_order_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_trailer_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_guardians_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_home"></div>
+                        <div id="Stage_pop_up_menu_side_menu_close_menuCopy"></div>
+                        <div id="Stage_pop_up_menu_side_menu_pop_up_menu2"></div>
+                    </div>
+                    <div id="Stage_pop_up_menu_bg"></div>
+                </div>
+                <div id="Stage_powerful_abilities_art" style="display:none;" class="powerful_abilities">
+                    <div id="Stage_powerful_abilities_art_learn_more"></div>
+                    <div id="Stage_powerful_abilities_art_article_content_2"></div>
+                </div>
+                <div id="Stage_masive_hive_art" class="edgeLoad-EDGE-14859374 masive_hive_art">
+                    <div id="Stage_masive_hive_art_learn_more"></div>
+                    <div id="Stage_masive_hive_art_article_content_3"></div>
+                </div>
+                <div id="Stage_trailer" class="edgeLoad-EDGE-14859374 trailer">
+                    <div id="Stage_trailer_playVideoBttn"></div>
+                    <div id="Stage_trailer_playDate"></div>
+                    <div id="Stage_trailer_animate_vid_container" class="videoContainer">
+                        <div id="Stage_trailer_animate_vid_container_close_video" class="closeVideo"></div>
+                        <div id="Stage_trailer_animate_vid_container_videoContainer" class="videoContainer"></div>
+                    </div>
+                    <div id="Stage_trailer_video-slide" class="bgVideo"></div>
+                </div>
+                <div id="Stage_pre_order" style="display:none;" class="pre_order">
+                    <div id="Stage_pre_order_pre-order2"></div>
+                </div>
+                <div id="Stage_guardians" style="display:none;" class="guardians_slide">
+                    <div id="Stage_guardians_gurdian_1" class="guardian1">
+                        <div id="Stage_guardians_gurdian_1_guardian_1_desc" class="guardian_info">
+                            <div id="Stage_guardians_gurdian_1_guardian_1_desc_guardian_1_logo"></div>
+                            <div id="Stage_guardians_gurdian_1_guardian_1_desc_learn_more"></div>
+                            <div id="Stage_guardians_gurdian_1_guardian_1_desc_guardian_1_desc"></div>
+                        </div>
+                        <div id="Stage_guardians_gurdian_1_guardian_1"></div>
+                    </div>
+                    <div id="Stage_guardians_guardian_22" class="guardian2">
+                        <div id="Stage_guardians_guardian_22_guardian_2_desc" class="guardian_info">
+                            <div id="Stage_guardians_guardian_22_guardian_2_desc_guardian_1_logo"></div>
+                            <div id="Stage_guardians_guardian_22_guardian_2_desc_learn_more"></div>
+                            <div id="Stage_guardians_guardian_22_guardian_2_desc_guardian_1_desc"></div>
+                        </div>
+                        <div id="Stage_guardians_guardian_22_guardian_2"></div>
+                    </div>
+                    <div id="Stage_guardians_guardian_32" class="guardian3">
+                        <div id="Stage_guardians_guardian_32_guardian_3_desc" class="guardian_info">
+                            <div id="Stage_guardians_guardian_32_guardian_3_desc_guardian_1_logo"></div>
+                            <div id="Stage_guardians_guardian_32_guardian_3_desc_learn_more"></div>
+                            <div id="Stage_guardians_guardian_32_guardian_3_desc_guardian_1_desc"></div>
+                        </div>
+                        <div id="Stage_guardians_guardian_32_guardian_3"></div>
+                    </div>
+                    <div id="Stage_guardians_gourdians"></div>
+                </div>
+                <div id="Stage_the_taken_article" style="display:none;" class="takenArticle">
+                    <div id="Stage_the_taken_article_article_container" class="taken_article_cont">
+                        <div id="Stage_the_taken_article_article_container_taken_article_content" class="taken_article_cont"></div>
+                    </div>
+                    <div id="Stage_the_taken_article_article1_bg"></div>
+                </div>
+                <div id="Stage_startSlide" style="display:none;" class="home">
+                    <div id="Stage_startSlide_game_modes_article"></div>
+                    <div id="Stage_startSlide_guardians_article"></div>
+                    <div id="Stage_startSlide_traveler_article"></div>
+                    <div id="Stage_startSlide_start_slide"></div>
+                </div>
+                <div id="Stage_main-menu" class="edgeLoad-EDGE-14859374"></div>
+                <div id="Stage_pre-order" class="edgeLoad-EDGE-14859374"></div>
+                <div id="Stage_menu-tab" class="edgeLoad-EDGE-14859374"></div>
+            </div>
+
+
+
+            <!-- uncomment below for video units -->
+            <style> #video-section { position:absolute; top:0; left:0%; height:100%; width:100%; z-index:10; margin:auto; } #closer{ position: absolute; top:1.4%; z-index:100; right:1%; cursor:pointer; } #video-expand-bar { display:block; position:absolute; display:none; cursor:pointer; } #video-section #video-container { height: 90% !important; margin: auto; overflow: hidden; /*margin-top:6.2%;*/ width: 100%; } #lightbox { width:100%; height:100%; position:absolute; top:0; left:0; background-color:black; z-index:5; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity:0.8; }</style>
+            <div id="closer" style="width:3%;height:4.5%;"> <img src="img/close.png" style="width:100%;height:100%"/> </div><div style="height: 100% !important;margin: auto;overflow: hidden;margin-top:6.2%;width: 100%;"  id="video-section"> <div id="video-container"> </div> </div> <div id="lightbox"></div>
+
+
+
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'destiny_dynamic_006';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639557&PluID=0&ord='+Math.floor(Math.random()*1000000000);
+        var edgeStartAnimation = {};
+        var PreOrder = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639557&PluID=0&ord='+Math.floor(Math.random()*1000000000);
+        var powerfull_abilities_link = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639557&PluID=0&ord='+Math.floor(Math.random()*1000000000);
+        var masive_Hive_link = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639557&PluID=0&ord='+Math.floor(Math.random()*1000000000);
+
+    </script>
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="destiny_006_dyn_edgePreload.js"></script>
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+    <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj";</script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+        <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj"</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+    </script>
+
+
+
+</body>             
+</html>

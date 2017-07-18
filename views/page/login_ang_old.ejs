@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <% include partials/head.ejs %>
+     <style>
+     [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+    }
+
+     </style>
+  </head>
+ <body ng-app="app" ng-cloak ng-controller="MainCtrl as main" style="background-color:#888888">
+<div class="container span3 offset2" style="margin-top:20%">
+<div class="panel" ng-class="{ 'panel-primary': !existingUser,'panel-success': existingUser }"> 
+  <div class="panel-heading"><span ng-show='!existingUser'>Login</span><span ng-show='existingUser'>Sign up </span></div>  
+  <div class="panel-body">
+    
+    <!-- create our form -->
+    <form name="userForm" id="loginForm"
+     enctype   =  "application/x-www-form-urlencoded"
+     action    =  "{{formOptions}}"
+     method    =  "post" 
+     novalidate>
+
+    <!-- create user section 
+     <div id="createUser" class="" ng-show="newUser" ng-class="{ 'createUser-show-hide': newUser }">
+         include partials/templates/admin/createUser.ejs %>       
+     </div>
+     -->
+        
+        <!-- name field -->
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" 
+                ng-model="main.name"
+                ng-minlength="5"
+                ng-maxlength="10"
+                required>
+                
+            <!-- ngMessages goes here -->
+            <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched"> <!-- do validation only out of focus on blur 
+              ng-if="userForm.name.$touched really cool !! -->
+          <p ng-message="minlength">Your name is too short.</p>
+          <p ng-message="maxlength">Your name is too long.</p>
+          <p ng-message="required">Your name is required.</p>
+      </div>
+
+        </div>
+        
+   
+         <!-- password field -->
+         <div class="row">
+          <div class="form-group col-md-11 " ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
+
+              <label>Password</label>
+              <input type="{{passwordType}}" name="password" class="form-control" 
+                ng-model="user.password"
+                required>
+            <!-- progressbar -->
+            <div class="progress" style="margin-top:10px" ng-show="userForm.fieldOnFocus"><!-- ng-show="userForm.password.$touched" -->
+                  <div class="progress-bar" role="progressbar" 
+                  ng-class=" { 'progress-bar-success':progressBarStrong ,'progress-bar-warning':!progressBarStrong,'progress-bar-danger':progressBarWeak }"
+                  aria-valuenow="{{passwordStrength}}"
+                  aria-valuemin="0" 
+                  aria-valuemax="100"
+                  style="width:{{passwordStrength}}%">{{passwordLabel}}
+                  </div>
+            </div>
+            <p class="info" style="color:white;"><%= error %></p>
+      
+         </div> 
+         <div class="col-md-1" ng-click="showEye = showEye ? false : true; togglePasswordVisibility() " style="color:white;"><i class="fa fa-6" ng-class="{ 'fa-eye-slash': !showEye,'fa-eye': showEye }" style="font-size:2em;margin-top:30px;cursor:pointer"></i></div>
+     </div>
+
+     <!-- login as new user or existing user -->
+     <p class="navbar-text navbar-right">
+     <button type="button" class="btn btn-primary" ng-click=" existingUser = existingUser ? false : true; selectUser();">
+          <div class="form-group" style="margin:0;padding:0">
+              <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid" >Submit</button>
+          </div>
+        </p>
+        
+    </form>
+    </div>
+</div>
+</div>
+    <footer>
+
+
+      <script type="text/javascript">
+      angular
+      .module('app', ['ngMessages'])
+      .controller('MainCtrl', function($scope){
+
+        var variationCheck = 0;
+        var score = 0;
+        var applied;
+        var variationCheck;
+        $scope.passwordType = "password";
+        $scope.formOptions = "/admin/login";
+
+      function passwordStrength(pass,oldValue){
+
+            /*those are the options for validation with scoring system*/
+            var variations = [
+                { rulename :"digits",rule:function(value){ var result = /\d$/.test(value);  return result; }, score:2},//digits
+                { rulename :"lowercase",rule:function(value){ var result = /[a-z]$/.test(value); return result; }, score:0.5},//lowercase
+                { rulename :"uppercase",rule:function(value){ var result = /[A-Z]$/.test(value); return result; }, score:1},//uppercase
+                { rulename :"specialCharacters",rule:function(value){ var result = /\W$/.test(value); return result; }, score:3} //specialCharacters
+            ];  
+
+            (typeof pass != "undefined" ) ? runValidation() : score = 0 ;
+            //show only progres bar when user is typing;
+            $scope.userForm.fieldOnFocus = (typeof pass != "undefined" ) ? true : false ;
+
+            checkScore = function(value){ //pass the string to be validated;
+                  //loop throuh variation table
+                      for( var i=0,nestedRules;nestedRules=variations[i]; i++){
+
+                    if( nestedRules.rule(value) ) {  
+                      //add points if the rule applies
+                        variationCheck += nestedRules.score;  
+                        //record current score;
+                        score= variationCheck;  
+                    };
+                  }
+              score = variationCheck *10;
+                }
+                  
+            function runValidation() {
+              //1. if oldValue is undefined run either userBackSlashes() or checkScore(pass);
+              //2. if you running userBackSlashes() check if old value is different from new value that means user backslashes othwise run chcekScore(pass)
+              (typeof oldValue != "undefined")   ?   ( (pass.length < oldValue.length) ? userBackSlashes() : checkScore(pass) )  :   checkScore(pass);
+
+              function userBackSlashes(){
+                    //reset varion check for the bulk validation in the character loop;
+                  variationCheck = 0;
+                  //update new password after deleting characters or going backslash
+                  for(var chart=0; chart<oldValue.length; chart++){
+                      var character = pass.substr(chart,1);
+                      checkScore(character);
+                  }
+              }
+
+            }
+
+            $scope.progressBarWeak =  (score< 40) ? true : false;
+            $scope.progressBarStrong =  (score>=40 && score<=70) ? false : true; //it covers medium and strong;
+            $scope.passwordLabel = (score< 40)   ?   "Weak" : ( (score>=40 && score<=70) ? "Medium" : "Strong" );
+            $scope.passwordStrength = (score > 100) ? 100 : score; //maximum score 100
+            $scope.togglePasswordVisibility = function(){ $scope.passwordType = $scope.showEye ? "text" : "password"; } //show password or text depend on ShowEye
+
+      }
+
+    //watch for password change 
+    $scope.$watch('user.password', function(newVal,oldVal){
+      passwordStrength(newVal,oldVal)
+
+      $scope.existingUser ? $scope.userForm.fieldOnFocus = true : $scope.userForm.fieldOnFocus = false;
+    
+
+
+
+    });
+
+    //Login or sign up
+    $scope.selectUser = function() {
+      $scope.existingUser ? $scope.formOptions = "/createUser":  $scope.formOptions = "/admin/login";
+     // $scope.newUser ?  $scope.newUser = false : $scope.newUser  = true;
+
+    }
+
+    });
+
+
+    </script>
+          <% include partials/footer.ejs %>
+    </footer>
+
+  </body>
+</html>

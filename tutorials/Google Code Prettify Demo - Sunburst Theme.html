@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://tutsplus.github.io/syntax-highlighter-demos/code_prettify_sunburst.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title> Google Code Prettify Demo - Sunburst Theme</title>
+    <link href="./Google Code Prettify Demo - Sunburst Theme_files/css" rel="stylesheet" type="text/css">
+    <link href="./Google Code Prettify Demo - Sunburst Theme_files/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./Google Code Prettify Demo - Sunburst Theme_files/sunburst.css">
+  <script type="text/javascript" async="" src="./Google Code Prettify Demo - Sunburst Theme_files/ga.js"></script><script type="text/javascript" src="./Google Code Prettify Demo - Sunburst Theme_files/all.js"></script><script type="text/javascript" src="./Google Code Prettify Demo - Sunburst Theme_files/CONF.js"></script></head>
+  <body>
+    <div class="wrapper">
+      <div class="demodisplay">
+        <h1> Google Code Prettify Demo - Sunburst Theme</h1>
+        <p>Website: <a href="https://github.com/google/code-prettify" target="_target">https://github.com/google/code-prettify</a></p>
+        <h2>HTML</h2>
+        <pre class="prettyprint prettyprinted"><span class="pln"> 
+</span><span class="tag">&lt;header&gt;</span><span class="pln">
+</span><span class="tag">&lt;h1&gt;</span><span class="pln">Example HTML</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+</span><span class="tag">&lt;/header&gt;</span><span class="pln">
+</span><span class="tag">&lt;main</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"style"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;p&gt;</span><span class="pln">Some text</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/main&gt;</span></pre>
+        <h2>JavaScript</h2>
+        <pre class="prettyprint prettyprinted"><span class="kwd">var</span><span class="pln"> example </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">function</span><span class="pln"> foo</span><span class="pun">(</span><span class="pln">arg</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln"> </span><span class="str">"do"</span><span class="pun">,</span><span class="pln"> arg</span><span class="pun">);</span><span class="pln">
+	arg </span><span class="pun">=</span><span class="pln"> example </span><span class="pun">?</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">return</span><span class="pln"> arg</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+        <h2>CSS</h2>
+        <pre class="prettyprint prettyprinted"><span class="lit">@import</span><span class="pln"> </span><span class="str">"somestyle.css"</span><span class="pln">
+
+body </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">wrapper </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#F88;</span><span class="pln">
+	color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#454545;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">box</span><span class="pun">::</span><span class="pln">after </span><span class="pun">{</span><span class="pln">
+	content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"..."</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+        <h2>PHP</h2>
+        <pre class="prettyprint prettyprinted"><span class="pun">&lt;?</span><span class="pln">php </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> have_posts</span><span class="pun">()</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> have_posts</span><span class="pun">()</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> the_post</span><span class="pun">();</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="pln">
+</span><span class="tag">&lt;article&gt;</span><span class="pln">
+</span><span class="tag">&lt;h1&gt;</span><span class="pun">&lt;?</span><span class="pln">php the_title</span><span class="pun">();</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+</span><span class="pun">&lt;?</span><span class="pln">php the_content</span><span class="pun">();</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="pln">
+</span><span class="tag">&lt;/article&gt;</span><span class="pln">
+</span><span class="pun">&lt;?</span><span class="pln">php endwhile</span><span class="pun">;</span><span class="pln"> endif</span><span class="pun">;</span><span class="pln"> </span><span class="pun">?&gt;</span></pre>
+        <h2>Markdown</h2>
+        <pre class="prettyprint prettyprinted"><span class="com"># Example Markdown</span><span class="pln">
+
+</span><span class="typ">Some</span><span class="pln"> text </span><span class="kwd">with</span><span class="pln"> </span><span class="pun">*</span><span class="pln">emphasis</span><span class="pun">*</span><span class="pln">
+
+</span><span class="pun">*</span><span class="pln"> list
+</span><span class="pun">*</span><span class="pln"> list
+</span><span class="pun">*</span><span class="pln"> list
+
+</span><span class="typ">Some</span><span class="pln"> text </span><span class="kwd">with</span><span class="pln"> a </span><span class="pun">[</span><span class="pln">link</span><span class="pun">](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//tutsplus.com)</span></pre>
+        <h2>CoffeeScript</h2>
+        <pre class="prettyprint prettyprinted"><span class="com"># Objects:</span><span class="pln">
+math </span><span class="pun">=</span><span class="pln">
+  root</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">sqrt
+  square</span><span class="pun">:</span><span class="pln"> square
+  cube</span><span class="pun">:</span><span class="pln">   </span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> x </span><span class="pun">*</span><span class="pln"> square x
+
+</span><span class="com"># Splats:</span><span class="pln">
+race </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">winner</span><span class="pun">,</span><span class="pln"> runners</span><span class="pun">...)</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln">
+  </span><span class="kwd">print</span><span class="pln"> winner</span><span class="pun">,</span><span class="pln"> runners
+
+</span><span class="com"># Existence:</span><span class="pln">
+alert </span><span class="str">"I knew it!"</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> elvis</span><span class="pun">?</span><span class="pln">
+
+</span><span class="com"># Array comprehensions:</span><span class="pln">
+cubes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">math</span><span class="pun">.</span><span class="pln">cube num </span><span class="kwd">for</span><span class="pln"> num </span><span class="kwd">in</span><span class="pln"> list</span><span class="pun">)</span></pre>
+        <h2>Handlebars</h2>
+        <pre class="prettyprint prettyprinted"><span class="tag">&lt;header&gt;</span><span class="pln">
+</span><span class="tag">&lt;h1&gt;</span><span class="pln">{{title}}</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+</span><span class="tag">&lt;/header&gt;</span><span class="pln">
+</span><span class="tag">&lt;main</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"style"</span><span class="tag">&gt;</span><span class="pln">
+{{content}}
+</span><span class="tag">&lt;/main&gt;</span></pre>
+        <h2>Jade</h2>
+        <pre class="prettyprint prettyprinted"><span class="pun">-</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> title </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Example Jade"</span><span class="pun">;</span><span class="pln">
+header
+	h1 </span><span class="com">#{title}</span><span class="pln">
+main</span><span class="pun">.</span><span class="pln">style
+	p </span><span class="typ">Some</span><span class="pln"> text</span></pre>
+        <h2>LESS</h2>
+        <pre class="prettyprint prettyprinted"><span class="lit">@body_background</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span><span class="pln">
+</span><span class="lit">@wrapper_background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#F88;</span><span class="pln">
+</span><span class="lit">@wrapper_color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#454545;</span><span class="pln">
+
+body </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> </span><span class="lit">@body_background</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">wrapper </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> </span><span class="lit">@wrapper_background</span><span class="pun">;</span><span class="pln">
+	color</span><span class="pun">:</span><span class="pln"> </span><span class="lit">@wrapper_color</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">box</span><span class="pun">::</span><span class="pln">after </span><span class="pun">{</span><span class="pln">
+	content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"..."</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+        <h2>Sass</h2>
+        <pre class="prettyprint prettyprinted"><span class="pln">$body_background</span><span class="pun">:</span><span class="pln"> white</span><span class="pun">;</span><span class="pln">
+$wrapper_background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#F88;</span><span class="pln">
+$wrapper_color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#454545;</span><span class="pln">
+
+body </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> $body_background</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">wrapper </span><span class="pun">{</span><span class="pln">
+	background</span><span class="pun">:</span><span class="pln"> $wrapper_background</span><span class="pun">;</span><span class="pln">
+	color</span><span class="pun">:</span><span class="pln"> $wrapper_color</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">box</span><span class="pun">::</span><span class="pln">after </span><span class="pun">{</span><span class="pln">
+	content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"..."</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre>
+        <h2>Stylus</h2>
+        <pre class="prettyprint prettyprinted"><span class="pln">$body_background </span><span class="pun">=</span><span class="pln"> white
+$wrapper_background </span><span class="pun">=</span><span class="pln"> </span><span class="com">#F88</span><span class="pln">
+$wrapper_color </span><span class="pun">=</span><span class="pln"> </span><span class="com">#454545</span><span class="pln">
+
+body
+	background</span><span class="pun">:</span><span class="pln"> $body_background
+
+</span><span class="pun">.</span><span class="pln">wrapper
+	background</span><span class="pun">:</span><span class="pln"> $wrapper_background
+	color</span><span class="pun">:</span><span class="pln"> $wrapper_color
+
+</span><span class="pun">.</span><span class="pln">box</span><span class="pun">::</span><span class="pln">after
+	content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"..."</span></pre>
+      </div>
+      <div class="demolist">
+        <h3>Highlighter Demos:</h3>
+        <ul>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/syntaxhighlighter.html">SyntaxHighlighter - Default Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/syntaxhighlighter_midnight.html">SyntaxHighlighter - Midnight Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/syntaxhighlighter_rdark.html">SyntaxHighlighter - RDark Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/prism.html">Prism - Default Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/prism_okaidia.html">Prism - Okaidia Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/prism_twilight.html">Prism - Twilight Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/highlightjs.html">Highlight.js - Default Style</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/highlightjs_monokai.html">Highlight.js - Monokai Sublime Style</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/highlightjs_railscasts.html">Highlight.js - Railscasts Style</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/rainbow.html">Rainbow - GitHub Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/rainbow_monokai.html">Rainbow - Monokai Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/rainbow_twilight.html">Rainbow - Twilight Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/shjs.html">SHJS - Default Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/shjs_eclipse.html">SHJS - Eclipse Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/shjs_navy.html">SHJS - Navy Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/code_prettify.html">Code Prettify - Default Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/code_prettify_desert.html">Code Prettify - Desert Theme</a></li>
+          <li><a href="http://tutsplus.github.io/syntax-highlighter-demos/code_prettify_sunburst.html">Code Prettify - Sunburst Theme</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!--analytics-->
+<script type="text/javascript" async="" src="./Google Code Prettify Demo - Sunburst Theme_files/ga(1).js"></script><script src="./Google Code Prettify Demo - Sunburst Theme_files/jquery-1.10.1.min.js"></script>
+<script src="./Google Code Prettify Demo - Sunburst Theme_files/ga-tracking.min.js"></script>
+
+  
+  
+<script src="./Google Code Prettify Demo - Sunburst Theme_files/get"></script><script type="text/javascript" charset="UTF-8" src="./Google Code Prettify Demo - Sunburst Theme_files/k_r.php"></script></body></html>

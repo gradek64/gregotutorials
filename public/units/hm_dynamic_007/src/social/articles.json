@@ -1,0 +1,61 @@
+{"data":{
+
+    "logo":"images/articles/hm_logo.jpg",
+    "mainArticle":
+    {
+        "mainHeader":"Breaking news in London for HM",
+        "content":[
+            {
+             "artMainHeader":"Erozone News" ,
+             "artImage":"images/articles/news.jpg",
+             "artHeader":"this is crisis ?" ,
+             "artDate":"20 Nov 2015",
+             "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            },
+            {
+                "artMainHeader":"Erozone News" ,
+                "artImage":"images/articles/news.jpg",
+                "artHeader":"this is crisis ?" ,
+                "artDate":"20 Nov 2015",
+                "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            },
+            {
+                "artMainHeader":"Erozone News" ,
+                "artImage":"images/articles/news.jpg",
+                "artHeader":"this is crisis ?" ,
+                "artDate":"20 Nov 2015",
+                "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            }
+
+        ]
+    },
+    "sideArticle":
+    {
+        "content":[
+            {
+                "artMainHeader":"Erozone News" ,
+                "artImage":"images/articles/news.jpg",
+                "artHeader":"this is crisis ?" ,
+                "artDate":"20 Nov 2015",
+                "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            },
+            {
+                "artMainHeader":"Erozone News" ,
+                "artImage":"images/articles/news.jpg",
+                "artHeader":"this is crisis ?" ,
+                "artDate":"20 Nov 2015",
+                "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            },
+            {
+                "artMainHeader":"Erozone News" ,
+                "artImage":"images/articles/news.jpg",
+                "artHeader":"this is crisis ?" ,
+                "artDate":"20 Nov 2015",
+                "artText":"Greece has put forward a proposal for a six-month extension of its eurozone loan programme instead of renewing its existing bailout deal, which comes with harsh austerity measures. But Germany has already rejected this.The existing bailout deal expires at the end of the month and Greece could run out of money without a new accord."
+            }
+
+        ]
+    }
+
+
+}}

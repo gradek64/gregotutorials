@@ -1,0 +1,12 @@
+
+
+<iframe src="http://servedby.flashtalking.com/imp/1/54787;1493875;201;iframe;AvidMedia;ContentCardLondonTracking/?cachebuster=[CACHEBUSTER]" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="1" height="1">
+
+<img style="width:1px; height:1px;" src="http://servedby.flashtalking.com/imp/1/54787;1493875;201;redirect;AvidMedia;ContentCardLondonTracking/?cachebuster=[CACHEBUSTER]&url="/>
+
+<img style="width:1px; height:1px;" src="http://servedby.flashtalking.com/imp/1/54787;1493875;201;pixel;AvidMedia;ContentCardLondonTracking/?cachebuster=[CACHEBUSTER]"/>
+
+
+clickTag:
+
+http://servedby.flashtalking.com/click/1/54787;1493875;50126;211;0/?ft_width=1&ft_height=1&url=7739896

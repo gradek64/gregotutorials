@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+        #video-section-youtube {
+            position:absolute;
+            top:3%;
+            left:6%;
+            height:50%;
+            width:88%;
+            z-index:10;
+            margin:auto;
+
+        }
+
+        #video-expand-bar {
+            display:block;
+            position:absolute;
+            display:none;
+            cursor:pointer;
+        }
+        #video-section-youtube #video-container-youtube {
+            height: 100% !important;
+            margin: auto;
+            overflow: hidden;
+            width: 100%;
+        }
+        #lightbox-youtube {
+            width:88%;
+            height:50%;
+            position:absolute;
+            top:3%;
+            left:6%;
+            background-color:black;
+            z-index:5;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+            filter: alpha(opacity=80);
+            opacity:0.8;
+        }
+
+
+
+
+    
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+            
+</head>
+
+<body style="background-color:rgb(241, 241, 241)">
+    <div id="sky_youtube_feed_011" style="width:100%;height:99%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center 27%;border: 1px solid #808080;">
+
+            <!-- video section -->
+            <div id="video-section-youtube">
+
+                <!-- end video expand -bar -->
+                <div id="video-container-youtube">
+
+                </div>
+
+            </div>
+            <!-- end video section
+             <!-- lightbox-youtube -->
+            <div id="lightbox-youtube"></div>
+
+        </div>
+
+
+         <div id="youtubeFeed"></div>
+
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript">
+
+
+        var campaign = 'sky_youtube_feed_011';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'http://google.com';
+
+    </script>
+
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <!--<<script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+    script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj";</script>-->
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+        <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj"</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+    <script type="text/javascript">
+
+
+        var campaign = 'sky_youtube_feed_011';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'http://google.com';
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+        /* if (mobile) {
+         var isReplay = true;
+         } else {
+         var isReplay = false;
+         }*/
+
+        // iframe source
+
+
+        // load youtube api
+
+        /*
+         You can grab the video ID from youtube url where it says 'v='
+         If there is only one video, make sure that the variables below are correct
+         */
+
+
+        var player;
+        var tag = document.createElement('script');
+        window.videoready = false;
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // on youtube api loaded
+        function onYouTubeIframeAPIReady() {
+            iframeVideoSrc = '<div id="currentYtVideo"></div>';
+            window.videoready  = true;
+
+            youtubeVideo = function(videoID,videoName){
+                $('#currentYtVideo').remove();
+                $('#lightbox-youtube').show();
+                $('#video-section-youtube').show().addClass('active');
+                // and to last div as addclass isn't liked in edge
+                $('div:last').addClass('video-active');
+                $('#lightbox-youtube').fadeIn('fast',function(){
+                    // Animation complete.
+                    // start video
+                    //$('#closer').css('display','block').css('cursor','pointer');
+                    $('#video-container-youtube').append(iframeVideoSrc);
+
+
+
+                    var videoEnded = false;
+
+
+                    onPlayerReady = function(e){
+                        player.unMute();
+                        player.setVolume(30);
+                    }
+
+                    player = new YT.Player('currentYtVideo',{
+                        height: $('#video-container-youtube').height(),
+                        width: $('#video-container-youtube').width(),
+                        videoId: videoID,
+                        playerVars:{
+                            autoplay:1,
+                            fs:0
+                        },
+                        events: {
+                            onReady: onPlayerReady,
+                            onStateChange: function(event) {
+                                if(event.data === 0) {
+                                    videoEnded = true;
+                                    var currentPosition = player.getCurrentTime().toFixed(2);
+                                    if (isReplay) {
+                                        trackingCall('-events-Video length '+videoName+' replay video-evente--vls-'+currentPosition+'-vle-/'+campaign+'/'+getKeywordInfo.info);
+                                    } else {
+                                        trackingCall('-events-Video length '+videoName+' video intro-evente--vls-'+currentPosition+'-vle-/'+campaign+'/'+getKeywordInfo.info);
+                                    }
+                                }
+                            }
+                        }
+
+                    });
+                    /*
+
+                    $('#closer').click(function() {
+                        if(!videoEnded) {
+                            if (isReplay) {
+                                var currentPosition = player.getCurrentTime().toFixed(2);
+                                trackingCall('-events-Video length '+videosName[rand]+' replay video-evente--vls-'+currentPosition+'-vle-/'+campaign+'/'+getKeywordInfo.info);
+
+                            } else {
+                                var currentPosition = player.getCurrentTime().toFixed(2);
+                                trackingCall('-events-Video length '+videosName[rand]+' video intro-evente--vls-'+currentPosition+'-vle-/'+campaign+'/'+getKeywordInfo.info);
+                            }
+                        }
+                    });
+                    */
+
+                });
+
+
+            };
+            // resize event
+            resizeTimer="";
+            $(window).on('resize',function(){
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function(){
+
+                    // put all the resize tasks here
+
+                    // resize unit if it exists on the page
+                    if($('#currentYtVideo').length>0){
+                        $('#currentYtVideo').css({
+                            height: $('#video-container-youtube').height(),
+                            width: $('#video-container-youtube').width()
+                        });
+
+                    }
+
+                },500);
+
+            });
+
+
+
+            // check hash and hashchange
+            if(location.hash.indexOf('SEPSLIDE-stop')>-1){
+                // launch first video if not mobile
+               // if(!mobile){
+                    player.pauseVideo();
+                //}
+
+            }
+            $(window).on('hashchange',function(){
+                if(location.hash.indexOf('SEPSLIDE-stop')>-1){
+                    player.pauseVideo();
+                }
+            });
+
+
+
+
+        }; // end youtube api ready
+
+        // tracking
+
+        /*
+        $('#mobileLaunchVideo').click(function(e) {
+            isReplay = true;
+            youtubeVideo(videosID[rand]);
+            trackingCall('-events-Video - play - '+videosName[rand]+' replay video -evente-/'+campaign+'/'+getKeywordInfo.info);
+
+            //tracking mousepress
+            $(this).attr('title', 'play button has been pressed');
+            trackingCall('-events-mousepress-evente--soc-play button has been pressed-soe--cos-'+e.pageX+'-'+e.pageY+'-coe-/'+campaign+'/'+getKeywordInfo.info);
+        });
+        */
+
+    </script>
+    <style>
+        /*youtube feed styling*/
+        #youtubeFeed {
+
+            position: absolute;
+            top:50%;
+            left:5%;
+            height: 40%;
+            width: 90%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: #ffffff;
+            margin-top:6%;
+            font-size: 12px;
+            font-family: Roboto,Arial;
+        }
+
+        li.thumbContent {
+            position: relative;
+            display: block;
+            list-style: none;
+            height: auto;
+            border-top: 1px solid #DFD3D3;
+            width: 100%;
+            cursor: pointer;
+        }
+        .tableCell {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: 0;
+            border-spacing: 0;
+            color: grey;
+        }
+
+        .orderNumber {
+            width: 25px;
+            margin-left:10px;
+        }
+
+        .imageContainer {
+            display: inline-block;
+            max-width: 120px;
+            width: 20%;
+        }
+
+        img.thumb {
+            height: auto;
+            max-width: 120px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 80%;
+            height:auto;
+        }
+        p.title {
+            color:black;
+        }
+
+        .thumbContentText {
+            line-height: 14px;
+            word-wrap: break-word;
+            width: 50%;
+
+        }
+        .thumbContentText p.timeDisplay{
+            position: absolute;
+            right: 3%;
+            bottom:45%;
+
+        }
+    </style>
+    <script type="text/javascript">
+
+        function showthumbs(response) {
+            var videoArray = [];
+
+            $.each(response.items, function(i, item) {
+                var videoThumb= item.snippet.thumbnails;
+                var videoThumbSRC= item.snippet.thumbnails.medium.url
+                //thumb dicription
+                var thumbDiscription = item.snippet.description;
+                //thumb title
+                var thumbTitle = item.snippet.title;
+                var thumbAuthor = item.snippet.channelTitle
+
+                //video thumb id
+                var videoThumbID = item.snippet.resourceId.videoId;
+
+                if(typeof videoThumb !=='undefined'){
+                    var image = videoThumbSRC;
+                    if(typeof image !=='undefined'){
+                        order = i+1;//starts from 1;
+
+                        //list item
+                        elem = $('<li class="thumbContent"></li>');
+
+                        /*get video title*/
+                        //console.log(item.title.$t);
+                        var title = thumbTitle;
+                        var author = thumbAuthor;
+
+                        /*get the author of the channel*/
+                        /*
+
+                         var timerDuration = item.media$group.yt$duration.seconds;
+                         var moduleNumber = timerDuration%60;
+
+                         var seconds = timerDuration%60 > 10 ? moduleNumber-1 :'0'+moduleNumber;//little fix
+                         var minutes = Math.floor(timerDuration/60) > 10 ? Math.floor(timerDuration/60) : '0'+Math.floor(timerDuration/60);
+                         var timerDurationDisplay = minutes +':'+ seconds;
+                         */
+
+                        var image = videoThumbSRC;
+
+
+                        /* cells */
+                        elem.prepend( $('<p class="orderNumber tableCell">'+order+'</p>') );
+                        elem.append( $('<div class="imageContainer"><img class="thumb tableCell" src="'+image+'"/></div>') );
+                        elem.append( $('<div class="thumbContentText tableCell">' +
+                                '<p class="title">'+title+'</p>'+
+                                '<p class="author">by '+author+'</p>'+
+                            //'<p class="timeDisplay">'+timerDurationDisplay+'</p>'+
+                                '</div>') );
+
+                        /*get video id for player to change video*/
+                        var videoID = videoThumbID;
+                        //console.log(item.media$group.yt$videoid.$t);
+                        /*push video refference into array*/
+                        videoArray.push(videoID);
+
+                        /*play first video straight away*/
+                        if(order==1){
+
+                            // check hash and hashchange
+                            //if(location.hash.indexOf('SEPSLIDE-start')>-1){
+                                var playerReady = setInterval(function(){
+                                    console.log('videoreadygege: '+window.videoready);
+                                    if(window.videoready){
+                                        clearInterval(playerReady);
+                                        youtubeVideo(videoArray[0],'game');
+                                        //trackingCall('-events-Video - play - '+videosName[rand]+' video intro -evente-/'+campaign+'/'+getKeywordInfo.info);
+                                    }
+                                },100);
+
+                           // }
+                            $(window).on('hashchange',function(){
+                               // if(location.hash.indexOf('SEPSLIDE-start')>-1){
+
+                                    var playerReady = setInterval(function(){
+                                        console.log('videoreadygege: '+window.videoready);
+                                        if(window.videoready){
+                                            clearInterval(playerReady);
+                                            youtubeVideo(videoArray[0],'game');
+                                            //trackingCall('-events-Video - play - '+videosName[rand]+' video intro -evente-/'+campaign+'/'+getKeywordInfo.info);
+                                        }
+                                    },100);
+                               // }
+                            });
+                            //}
+
+                            // },100);
+
+                        }
+                        //trackingCall('-events-Video - play - '+videosName[rand]+' video intro -evente-/'+campaign+'/'+getKeywordInfo.info);
+
+                        //assing click for every thumb generated;
+                        elem.click(function(e){
+                            var  slot = $(this).index();
+
+
+                            $('#adbrk-ifr')
+                                    .removeAttr('height')
+                                    .removeAttr('width')
+                                    .css('width','700px');
+
+                            var originalWidth = $('#video-section-youtube').width();
+                            var unitWidth = $('body').width();
+                            $('#video-section-youtube').css('width',unitWidth);
+
+
+
+                            player.loadVideoById(videoArray[slot]);
+
+
+
+
+                        });
+
+                        /* hover effect on video thumbs*/
+                        elem.hover(
+
+                                function(){
+                                    $(this).css('backgroundColor','rgb(247, 247, 247)');
+                                },
+                                function(){
+                                    $(this).css('backgroundColor','white');
+                                })
+
+                        //add item list to the container
+                        $('#youtubeFeed').append(elem);
+                    }
+
+                }
+
+                // console.log(videoThumbID);
+                // console.log(thumbDiscription);
+                //console.log(videoThumbSRC);
+                // console.log(thumbTitle);
+
+            });
+
+
+
+        }
+
+
+    </script>
+    <!--this link returns all playlists
+    <script type="text/javascript" src="https://gdata.youtube.com/feeds/api/users/skyatlantic/playlists?v=2&alt=json&callback=showVideo"></script>
+    -->
+    <!--this linkk returns game of throne playlist
+    <script type="text/javascript" src="https://gdata.youtube.com/feeds/api/playlists/PLziTV12IsNljW0UDiz9knFfz9_IUWUYmI?v=2&alt=json&callback=showVideo"></script>
+    -->
+    <script>
+
+        $('document').ready(function(){
+            $.ajax({
+                type: 'get',
+                //url: 'https://www.googleapis.com/youtube/v3/playlists?part=contentDetails&channelId=UCMMc5wpNUa9YQJCEzw0Hr3Q&key=AIzaSyCSF43OqSBXp5IiabkvbQ69HNjqLg-C6Pw',
+                url:'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=PLziTV12IsNljW0UDiz9knFfz9_IUWUYmI&key=AIzaSyCSF43OqSBXp5IiabkvbQ69HNjqLg-C6Pw',
+                success: showthumbs
+            });
+        });
+
+    </script>
+</body>             
+</html>

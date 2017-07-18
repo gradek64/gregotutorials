@@ -1,0 +1,53 @@
+Placement Details: 
+Placement ID: 12425167 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - SS'15 New Neutrals 
+Campaign ID: 507834 
+Site: Avid Media
+Placement Name: AV Avid_ Dynamic_In Content Ad ROS
+Placement Format Type: Tracking Only
+Booked Impressions: 41666 
+Placement Dates:
+19/02/2015 00:00:00 - 28/02/2015 23:59:00
+
+//To track Impressions use the following URL:
+
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=12425167&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=12425167&PluID=0&ord=[timestamp]
+
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/35125/4118758/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/35125/4118757/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+Placement Details: 
+Placement ID: 12425169 
+Agency: H&M UK 
+Campaign: H&M Hennes & Mauritz, L.P. - SS'15 New Neutrals 
+Campaign ID: 507834 
+Site: Avid Media
+Placement Name: Avid_ Dynamic_In Content Ad ROS
+Placement Format Type: Tracking Only
+Booked Impressions: 104167 
+Placement Dates:
+19/02/2015 00:00:00 - 28/02/2015 23:59:00
+
+//To track Impressions use the following URL:
+
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=12425169&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=12425169&PluID=0&ord=[timestamp]
+
+
+<SCRIPT language='JavaScript1.1' SRC="http://pixel.adsafeprotected.com/rjss/st/35125/4118760/skeleton.js"></SCRIPT>
+<NOSCRIPT><IMG SRC="http://pixel.adsafeprotected.com/rfw/st/35125/4118759/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT=""></NOSCRIPT>
+====================================================
+

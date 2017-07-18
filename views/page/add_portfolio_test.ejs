@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  overflow: auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>
+<body>
+
+                  
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+<p>
+  In a few minutes there was, so far as the soldier could see, not a living thing left upon the common, and every bush and tree upon it that was not already a blackened skeleton was burning. The hussars had been on the road beyond the curvature of the ground, and he saw nothing of them. He heard the Martians rattle for a time and then become still. The giant saved Woking station and its cluster of houses until the last; then in a moment the Heat-Ray was brought to bear, and the town became a heap of fiery ruins. Then the Thing shut off the Heat-Ray, and turning its back upon the artilleryman, began to waddle away towards the smouldering pine woods that sheltered the second cylinder. As it did so a second glittering Titan built itself up out of the pit.
+
+  The second monster followed the first, and at that the artilleryman began to crawl very cautiously across the hot heather ash towards Horsell. He managed to get alive into the ditch by the side of the road, and so escaped to Woking. There his story became ejaculatory. The place was impassable. It seems there were a few people alive there, frantic for the most part and many burned and scalded. He was turned aside by the fire, and hid among some almost scorching heaps of broken wall as one of the Martian giants returned. He saw this one pursue a man, catch him up in one of its steely tentacles, and knock his head against the trunk of a pine tree. At last, after nightfall, the artilleryman made a rush for it and got over the railway embankment.
+
+  OPEN LAYER
+  Since then he had been skulking along towards Maybury, in the hope of getting out of danger Londonward. People were hiding in trenches and cellars, and many of the survivors had made off towards Woking village and Send. He had been consumed with thirst until he found one of the water mains near the railway arch smashed, and the water bubbling out like a spring upon the road.
+
+  That was the story I got from him, bit by bit. He grew calmer telling me and trying to make me see the things he had seen. He had eaten no food since midday, he told me early in his narrative, and I found some mutton and bread in the pantry and brought it into the room. We lit no lamp for fear of attracting the Martians, and ever and again our hands would touch upon bread or meat. As he talked, things about us came darkly out of the darkness, and the trampled bushes and broken rose trees outside the window grew distinct. It would seem that a number of men or animals had rushed across the lawn. I began to see his face, blackened and haggard, as no doubt mine was also.
+
+  When we had finished eating we went softly upstairs to my study, and I looked again out of the open window. In one night the valley had become a valley of ashes. The fires had dwindled now. Where flames had been there were now streamers of smoke; but the countless ruins of shattered and gutted houses and blasted and blackened trees that the night had hidden stood out now gaunt and terrible in the pitiless light of dawn. Yet here and there some object had had the luck to escape--a white railway signal here, the end of a greenhouse there, white and fresh amid the wreckage. Never before in the history of warfare had destruction been so indiscriminate and so universal. And shining with the growing light of the east, three of the metallic giants stood about the pit, their cowls rotating as though they were surveying the desolation they had made.
+
+  It seemed to me that the pit had been enlarged, and ever and again puffs of vivid green vapour streamed up and out of it towards the brightening dawn--streamed up, whirled, broke, and vanished.
+
+  Beyond were the pillars of fire about Chobham. They became pillars of bloodshot smoke at the first touch of day.
+
+  As the dawn grew brighter we withdrew from the window from which we had watched the Martians, and went very quietly downstairs.
+
+  The artilleryman agreed with me that the house was no place to stay in. He proposed, he said, to make his way Londonward, and thence rejoin his battery--No. 12, of the Horse Artillery. My plan was to return at once to Leatherhead; and so greatly had the strength of the Martians impressed me that I had determined to take my wife to Newhaven, and go with her out of the country forthwith. For I already perceived clearly that the country about London must inevitably be the scene of a disastrous struggle before such creatures as these could be destroyed.
+
+  The train passed rapidly across the State of Iowa, by Council Bluffs, Des Moines, and Iowa City. During the night it crossed the Mississippi at Davenport, and by Rock Island entered Illinois. The next day, which was the 10th, at four o'clock in the evening, it reached Chicago, already risen from its ruins, and more proudly seated than ever on the borders of its beautiful Lake Michigan.
+
+  Nine hundred miles separated Chicago from New York; but trains are not wanting at Chicago. Mr. Fogg passed at once from one to the other, and the locomotive of the Pittsburgh, Fort Wayne, and Chicago Railway left at full speed, as if it fully comprehended that that gentleman had no time to lose. It traversed Indiana, Ohio, Pennsylvania, and New Jersey like a flash, rushing through towns with antique names, some of which had streets and car-tracks, but as yet no houses. At last the Hudson came into view; and, at a quarter-past eleven in the evening of the 11th, the train stopped in the station on the right bank of the river, before the very pier of the Cunard line.
+
+  The China, for Liverpool, had started three-quarters of an hour before!
+
+  The China, in leaving, seemed to have carried off Phileas Fogg's last hope. None of the other steamers were able to serve his projects. The Pereire, of the French Transatlantic Company, whose admirable steamers are equal to any in speed and comfort, did not leave until the 14th; the Hamburg boats did not go directly to Liverpool or London, but to Havre; and the additional trip from Havre to Southampton would render Phileas Fogg's last efforts of no avail. The Inman steamer did not depart till the next day, and could not cross the Atlantic in time to save the wager.
+
+  Mr. Fogg learned all this in consulting his Bradshaw, which gave him the daily movements of the trans-Atlantic steamers.
+
+  Passepartout was crushed; it overwhelmed him to lose the boat by three-quarters of an hour. It was his fault, for, instead of helping his master, he had not ceased putting obstacles in his path! And when he recalled all the incidents of the tour, when he counted up the sums expended in pure loss and on his own account, when he thought that the immense stake, added to the heavy charges of this useless journey, would completely ruin Mr. Fogg, he overwhelmed himself with bitter self-accusations. Mr. Fogg, however, did not reproach him; and, on leaving the Cunard pier, only said: "We will consult about what is best to-morrow. Come."
+
+  OPEN LAYER
+  The party crossed the Hudson in the Jersey City ferryboat, and drove in a carriage to the St. Nicholas Hotel, on Broadway. Rooms were engaged, and the night passed, briefly to Phileas Fogg, who slept profoundly, but very long to Aouda and the others, whose agitation did not permit them to rest.
+
+  The next day was the 12th of December. From seven in the morning of the 12th to a quarter before nine in the evening of the 21st there were nine days, thirteen hours, and forty-five minutes. If Phileas Fogg had left in the China, one of the fastest steamers on the Atlantic, he would have reached Liverpool, and then London, within the period agreed upon.
+
+  Mr. Fogg left the hotel alone, after giving Passepartout instructions to await his return, and inform Aouda to be ready at an instant's notice. He proceeded to the banks of the Hudson, and looked about among the vessels moored or anchored in the river, for any that were about to depart. Several had departure signals, and were preparing to put to sea at morning tide; for in this immense and admirable port there is not one day in a hundred that vessels do not set out for every quarter of the globe. But they were mostly sailing vessels, of which, of course, Phileas Fogg could make no use.
+</p>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+</div>
+
+
+
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+   
+
+
+
+   <footer>
+      <% include partials/footer.ejs %>
+    </footer>
+  <!-- underscore array library -->
+ <!--  <script src="https://www.w3schools.com/howto/js/angular/underscore-min.js"></script> -->
+  <!-- pagination service-->
+  <!-- <script>var ang = angular.module('thumbs-module', []);</script>
+  <script src="js/angular/page_scripts/pagination_service.js"></script> -->
+  <!-- main for this page-->
+ <!--  <script src="js/angular/page_scripts/add_portfolio_thumbs.js"></script> -->
+ </div>
+  </body>
+</html>

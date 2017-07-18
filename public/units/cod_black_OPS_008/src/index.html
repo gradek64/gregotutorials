@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    .jw-icon-fullscreen {
+        display:none !important;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-left{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.8);
+            z-index: 20;
+        }
+        #arrow-right{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 120px solid rgba(215,71,1,0.5);
+            z-index: 20;
+        }
+        img#videoIconLeft  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+        img#videoIconRight  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+
+    */
+        .edgeLoad-EDGE-14859374 { visibility:hidden; }
+    
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+            
+</head>
+
+<body>
+
+    
+
+    <div id="" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+
+            <div id="Stage" class="EDGE-14859374">
+
+                <div id="Stage_pop_up_menu" class="edgeLoad-EDGE-14859374 menuContent">
+                    <div id="Stage_pop_up_menu_side_menu" class="side_menu">
+                        <div id="Stage_pop_up_menu_side_menu_overview_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_buy_now_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_media_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_zombie_bttn"></div>
+                        <div id="Stage_pop_up_menu_side_menu_close_menuCopy"></div>
+                        <div id="Stage_pop_up_menu_side_menu_twitter_link"></div>
+                        <div id="Stage_pop_up_menu_side_menu_facebook_link"></div>
+                        <div id="Stage_pop_up_menu_side_menu_pop_up_menu2"></div>
+                    </div>
+                    <div id="Stage_pop_up_menu_bg"></div>
+                </div>
+                <div id="Stage_trailer" class="edgeLoad-EDGE-14859374 trailer">
+                    <div id="Stage_trailer_Rectangle"></div>
+                    <div id="Stage_trailer_animate_vid_container" class="videoContainer">
+                        <div id="Stage_trailer_animate_vid_container_close_video" class="closeVideo"></div>
+                        <div id="Stage_trailer_animate_vid_container_videoContainer" class="videoContainer"></div>
+                    </div>
+                    <div id="Stage_trailer_video-slide" class="bgVideo"></div>
+                </div>
+                <div id="Stage_zombies" style="display:none;" class="zombies_slide">
+                    <div id="Stage_zombies_zombie_arrow_left"></div>
+                    <div id="Stage_zombies_zombie_arrow_right"></div>
+                    <div id="Stage_zombies_zombie_slideShow" class="slideShow1">
+                        <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer" class="slideShowContainer1">
+                            <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer_zombies_femme_fatal" class="image_0"></div>
+                            <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer_zombies_magician" class="image_1"></div>
+                            <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer_zombies_the_boxer" class="image_2"></div>
+                            <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer_zombies_the_characters_1" class="image_3"></div>
+                            <div id="Stage_zombies_zombie_slideShow_zombie_slideShowContainer_zombies_the_cup" class="image_4"></div>
+                        </div>
+                    </div>
+                    <div id="Stage_zombies_article1_bg"></div>
+                </div>
+                <div id="Stage_startSlide" style="display:none;" class="home">
+                    <div id="Stage_startSlide_zombie_link"></div>
+                    <div id="Stage_startSlide_learn_about_cybercore"></div>
+                    <div id="Stage_startSlide_dive_into_multiplayer"></div>
+                    <div id="Stage_startSlide_start_slide"></div>
+                </div>
+                <div id="Stage_main-menu" class="edgeLoad-EDGE-14859374"></div>
+                <div id="Stage_pre-order" class="edgeLoad-EDGE-14859374"></div>
+                <div id="Stage_menu-tab" class="edgeLoad-EDGE-14859374"></div>
+                <div id="Stage_effect" class="edgeLoad-EDGE-14859374 laserEffect"></div>
+            </div>
+
+            <!-- uncomment below for video units -->
+            <style> #video-section { position:absolute; top:0; left:0%; height:100%; width:100%; z-index:10; margin:auto; } #closer{ position: absolute; top:1.4%; z-index:100; right:1%; cursor:pointer; } #video-expand-bar { display:block; position:absolute; display:none; cursor:pointer; } #video-section #video-container { height: 100% !important; margin: auto; overflow: hidden; /*margin-top:6.2%;*/ width: 100%; } #lightbox { width:100%; height:100%; position:absolute; top:0; left:0; background-color:black; z-index:5; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity:0.8; }</style>
+            <div id="closer" style="width:3%;height:4.5%;"> <img src="img/close.png" style="width:100%;height:100%"/> </div><div style="height: 100% !important;overflow: hidden;margin-top:0;width: 100%;"  id="video-section"> <div id="video-container"> </div> </div> <div id="lightbox"></div>
+
+
+
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'cod_black_OPS_008';
+        var edgeStartAnimation = {};
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        // var pre_order_link = "https://www.callofduty.com/uk/en/blackops3/buy";
+        // var dive_into_multiplayer_link = "https://www.callofduty.com/uk/en/blackops3/mp";
+        var learn_about_cybercore_link = "https://www.youtube.com/watch?v=Ivx1V7kkdVs&index=1&list=PLZeek85Kuka0IUKvR6FfMkPN8-Shp4l2k";
+        var zombie_link = "https://www.callofduty.com/uk/en/blackops3/home";
+        var facebook_link = "https://www.facebook.com/Call-of-Duty-3-44636310414/";
+        var twitter_link = "https://twitter.com/blackops3news_";
+        var clickTag = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=15187061&PluID=0&ord='+Math.floor(Math.random()*1e7);
+        var pre_order_link = clickTag;
+        var dive_into_multiplayer_link = clickTag;
+
+    </script>
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="COD_dyn_008_edgePreload.js"></script>
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+    <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj";</script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+        <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj"</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+    </script>
+
+
+
+</body>             
+</html>

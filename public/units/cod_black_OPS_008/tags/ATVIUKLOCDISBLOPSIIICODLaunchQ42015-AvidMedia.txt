@@ -1,0 +1,40 @@
+Placement Details: 
+Placement ID: 15187061 
+Agency: MEC Activision MASTER 
+Campaign: Activision UK - ATVI / UK / LOC / DIS / BLOPSIII COD Launch / Q4 / 2015 
+Campaign ID: 592163 
+Site: Avid Media - UK 
+Placement Name: Avid _UK_Dynamic Content Card_MOB_Display_[1x1]
+Placement Format Type: Tracking Only
+Booked Impressions: 208333 
+Placement Dates:
+21/10/2015 21:00:00 - 20/12/2015 20:59:00
+
+//To track Impressions use the following URL:
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=15187061&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=15187061&PluID=0&ord=[timestamp]
+====================================================
+Placement Details: 
+Placement ID: 15187064 
+Agency: MEC Activision MASTER 
+Campaign: Activision UK - ATVI / UK / LOC / DIS / BLOPSIII COD Launch / Q4 / 2015 
+Campaign ID: 592163 
+Site: Avid Media - UK 
+Placement Name: Avid _UK_Dynamic Content Card_MOB_Display_[1x1]
+Placement Format Type: Tracking Only
+Booked Impressions: 125000 
+Placement Dates:
+21/10/2015 21:00:00 - 20/12/2015 20:59:00
+
+//To track Impressions use the following URL:
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=15187064&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=15187064&PluID=0&ord=[timestamp]
+====================================================

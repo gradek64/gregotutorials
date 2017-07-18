@@ -1,0 +1,18 @@
+		
+		1) start mongoDB from config file;
+			
+			make sure user is correct check user by 
+				type: whoami
+			mongod -f /Users/greg/mongodb/mongod.conf
+
+		2) start node web app (if U used express generator use)
+
+			DEBUG=myapp:* npm start
+		where myapp is folder that holds all your node files 
+		you can use only first bit of the name it uses regex to detect 
+
+		so for folder : gregotutorials.com
+		
+		you could use DEBUG=grego:* npm start
+		 
+			

@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+   
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+    .img-responsive{
+        width:100%;
+        height:100%;
+    }
+    .instagram-item{
+        display: inline-block;
+        width:45%;
+        margin:2%;
+        vertical-align: top;
+    }
+    .instagram-item:after{
+        clear: both;
+        float: none;
+     }
+
+    .instagram-item p {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-bottom: 1px solid #dadada;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+        .social-icon {
+            position: absolute;
+            right: 24%;
+            z-index: 10;
+            width: 50%;
+            /* border: 1px solid red; */
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .social {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .social li {
+            list-style-type: none;
+            margin: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #dadada;
+            border-radius: 4px;
+            box-shadow: 0 2px 0 rgba(197, 197, 197, 0.36);
+            background: #fff;
+        }
+
+        .social li a:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .social li:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .social .logo {
+            float: left;
+            width: 24px;
+            margin-right: 5px;
+            margin-top: -3px;
+        }
+
+        .social p {
+            margin: 0;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-bottom: 1px solid #dadada;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .social .featured-img {
+            float: left;
+            max-width: 130px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        .social a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            font-family: Roboto, sans-serif;
+            line-height: 18px;
+            font-size: 13px;
+        }
+        .widget {
+            z-index: 10;
+        }
+        .textImage {
+            line-height: 16px;
+            padding: 5px;
+        }
+
+        .backButton {
+            position: absolute;
+            right: 5%;
+            top: 3%;
+            cursor: pointer;
+        }
+        .edgeLoad-EDGE-14014572 { visibility:hidden; }
+
+        .campaign-link {
+            cursor:pointer;
+        }
+
+
+
+        /***   article styling ***/
+
+        .mainArticleContainer {
+            position: absolute;
+            width: 100%;
+            top:0;
+            left:0;
+            background-color: white;
+        }
+
+        /*main*/
+        .headerMainContainer {
+            width: 100%;
+            height: 10%;
+            border: 1px solid red;
+        }
+        .headerMainContainer h2{
+            width: 100%;
+            line-height:14px;
+            display: block;
+            padding: 5px;
+            text-transform: uppercase;
+            color: #3f3f3f;
+        }
+        .imageContainer {
+            width: 100%;
+            height: 40%;
+            border: 1px solid orange;
+        }
+        .imageContainer img{
+            width: 90%;
+            height: auto;
+        }
+
+        .artHeaderContainer {
+
+        }
+
+        .artDate {
+            float: right;
+            width: 30%;
+            line-height:12px;
+            font-size: 9px;
+            display: block;
+            padding: 5px;
+            text-transform: uppercase;
+            color: #ccc;
+        }
+        .artHeaderSmall {
+            float: left;
+            width: 60%;
+            line-height: 20px;
+            display: block;
+            padding: 5px;
+            color: #3f3f3f;
+        }
+        .artImage {
+            width: 50%;
+            height: auto;
+        }
+        .artText {
+            width: 100%;
+            padding-left: 5px;
+            line-height: 14px;
+        }
+        .mainArticleWrapper {
+            position: absolute;
+            width: 100%;
+            height:100%;
+        }
+    
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+            
+</head>
+
+<body>
+
+    <div id="tracking-pixel" style="position:absolute;height:1px;width:1px;"></div>
+
+    <div id="hm_dynamic_007" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+         <div id="socialContainer" style="position: absolute;top:6.6%; right:0; width: 13%;height: 60%; background-color:rgba(0,0,0,0.5);z-index: 9;">
+            <div class="social-icon" id="instagramButton" rel = 'instagramFeed' style="top:10%;"><img src="img/instagram_icon.png" style="width:100%;height:auto"></div>
+            <div class="social-icon" id="twitterButton" rel = 'twitterFeed' style="top: 40%;"><img src="img/twitter_icon.png" style="width:100%;height:auto;"></div>
+        </div>
+            <!-- SnapWidget -->
+            <div id="instagramFeed" class="widget" style="position: fixed; top:0;left:-70%;width:70%;height:100%; overflow-y:scroll;background-color:#faf0f0;">
+                <img src="img/backButton.png" class="backButton" />
+                <!-- INSTANSIVE WIDGET <script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/06d07e2ac9ae5a349d43a1afa5b9b97a89001bb0.html" id="instansive_06d07e2ac9" name="instansive_06d07e2ac9"  allowtransparency="true" class="instansive-widget" border=0 style="display:block;width:100%;margin-top: 6%;"></iframe>-->
+                <ul id="instagram" ></ul>
+            </div>
+
+            <div id="facebookFeed" class="widget" style="position:absolute;top:0;left:-70%;width:70%;height:100%; overflow-y: scroll;background: #faf0f0;">
+                <img src="img/backButton.png" class="backButton" />
+                <ul id="facebook" class="social"></ul>
+            </div>
+
+            <div id="twitterFeed" class="widget" style="position:absolute;top:0;left:-70%;width:70%;height:100%; overflow-y: scroll;background: #faf0f0;">
+                <img src="img/backButton.png" class="backButton" />
+                <ul id="twitter" class="social"></ul>
+            </div>
+
+            <!-- Edge -->
+
+            <div id="Stage" class="EDGE-14014572">
+
+                <div id="Stage_slideShow" class="edgeLoad-EDGE-14014572">
+                    <div id="Stage_slideShow_slideShowContainer">
+                        <div id="Stage_slideShow_slideShowContainer_HM_6124_PT1_JPG_700X400_6"></div>
+                        <div id="Stage_slideShow_slideShowContainer_HM_6124_PT1_JPG_700X400_5"></div>
+                        <div id="Stage_slideShow_slideShowContainer_HM_6124_PT1_JPG_700X400_4"></div>
+                        <div id="Stage_slideShow_slideShowContainer_HM_6124_PT1_JPG_700X400_3"></div>
+                    </div>
+                </div>
+                <div id="Stage_bottom_bar" class="edgeLoad-EDGE-14014572"></div>
+                <div id="Stage_social_links" style="display:none;"></div>
+                <div id="Stage_bottom_barCopy" class="edgeLoad-EDGE-14014572"></div>
+                <div id="Stage_share" class="edgeLoad-EDGE-14014572"></div>
+            </div>
+
+
+
+       </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'hm_dynamic_007';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=12425169&PluID=0&ord='+Math.floor(Math.random()*100000000);
+
+
+
+
+         var edgeStartAnimation = {};
+         var what_to_wear = 'http://www.comeovertothedarksidewehavecandy.com/2015/02/would-love-to-wear-19.html';
+         var new_neutrals_1 = 'http://blameitonfashion.freshnet.com/2015/02/20/new-neutrals/';
+         var feel_natural = 'http://www.girlalamode.co.uk/feeling-neutral/';
+         var get_in_nude = 'http://dreamingofchanel.com/get-in-nude-with-hm-new-neutrals-collection/';
+         var LDN = 'http://www.itsaldnthing.com/2015/02/must-haves-h-new-neutrals-edit.html';
+         var hm_debutes = 'http://kentonmagazine.com/hm-debuts-the-new-neutrals/';
+         var lara_stone_1 = 'http://www.fashionising.com/pictures/b--lara-stone-for-hm-new-neutrals-84756.html';
+         var lara_stone_2 = 'http://www.fashiongonerogue.com/lara-stone-rocks-neutrals-in-hm-spring-15-campaign/';
+         var new_nautrals_2 = 'http://www.theelginavenue.com/2015/02/the-new-neutrals.html';
+
+
+
+    </script>
+
+
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/v6-11/jwplayer.js"></script>
+    <script>jwplayer.key="wK7eTrZ5SKJIVMpoKVgUi57uw4omDtNdnzewQBtMXlE="</script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-10/jwplayer.js"></script>
+        <script>jwplayer.key="wK7eTrZ5SKJIVMpoKVgUi57uw4omDtNdnzewQBtMXlE="</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="hm_temp_edgePreload.js"></script>
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+        $(function() {
+            $.ajax({
+                type: 'get',
+                url: 'social/facebook.json',
+                dataType: 'json',
+                success: function(r) {
+                    var data = r.data;
+                    $.each(data, function(i, item) {
+                        var text = item.message,
+                                image = item.picture || false;
+                        link = item.link;
+
+                        if(text) {
+
+                            var elem = $('<li class="campaign-link"></li>'),
+                                elemP = $('<p><img class="logo" src="img/logo.jpeg">H&M United Kingdom</p>');
+                                //elemA = $('<a href="'+link+'" target="_blank">'+text+'</a>');
+                                elem.attr({'data-link': link ,
+                                           'data-title':encodeURIComponent(link)
+                                });
+
+                            if(image) {
+                                elem.prepend( $('<div class="textImage"><img class="featured-img" src="'+image+'">'+text+'</div>') );
+                            }
+
+                            elem.prepend(elemP);
+
+                            //elem.append(elemA);
+
+                            $('#facebook').append(elem);
+                        }
+                    });
+                }
+            });
+
+            $.ajax({
+                type: 'get',
+                url: 'social/twitter.json',
+                dataType: 'json',
+                success: function(data) {
+
+
+                    $.each(data, function(i, item) {
+                        var text = item.text,
+                                image = item.entities ? item.entities.media ? item.entities.media[0] ? item.entities.media[0].media_url : false : false : false,
+                                link = item.entities ? item.entities.media ? item.entities.media[0] ? item.entities.media[0].expanded_url : false : false : false;
+
+                        if(text) {
+                            var elem = $('<li class="campaign-link"></li>'),
+                                    elemP = $('<p><img class="logo" src="img/logo.jpeg">H&M United Kingdom</p>');
+                            //elemA = $('<a href="'+link+'" target="_blank">'+text+'</a>');
+                            elem.attr({'data-link': link ,
+                                'data-title':encodeURIComponent(link)
+                            });
+
+                            if(image) {
+                                elem.prepend( $('<div class="textImage"><img class="featured-img" src="'+image+':thumb">'+text+'</div>') );
+                            }
+
+                            elem.prepend(elemP);
+                           // elem.append(elemA);
+
+                            $('#twitter').append(elem);
+                        }
+                    });
+                }
+            });
+
+            $.ajax({
+                type: 'get',
+                url: 'social/instagram.json',
+                dataType: 'json',
+                success: function(instagraminfo) {
+                    var response = '';
+
+                    $.each(instagraminfo.data, function(i, item) {
+
+                        response +=  "<div class='instagram-item campaign-link' data-link='"+item.link+"' data-title='"+encodeURIComponent(item.caption.text)+"'>";
+                        //response +=  "<a href='"+item.link+"' target='_blank'>";
+                        response +=  "<img class='img-responsive' src='"+item.images.low_resolution.url+"' alt='"+item.caption.text+"'>";
+                       // response +=  "</a>";
+                        response +=  "<p>"+item.caption.text+"</p>";
+                        response +=  "</div>";
+
+
+
+                    });
+                    $('#instagram').append(response);
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+
+
+
+</body>             
+</html>

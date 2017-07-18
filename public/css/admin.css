@@ -1,0 +1,26 @@
+.box {
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/*****user title section **/
+/*thumbnail image*/
+img.avatar {
+  display: block;
+  width: 120px;
+  margin: 20px;
+  margin: 0 auto;
+}
+.clip-circle {
+  -webkit-clip-path: circle(60px at center);
+  clip-path: circle(60px at center);
+  border: 10px solid green;
+}
+/* tabs content */
+#tab-content {
+  background-color: #cccccc;
+}

@@ -1,0 +1,27 @@
+ <label>Name2</label>
+            <input type="text" name="name" class="form-control" 
+                ng-model="main.name"
+                ng-minlength="5"
+                ng-maxlength="10"
+                required>
+                  <!-- ngMessages goes here -->
+            <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched"> <!-- do validation only out of focus on blur 
+              ng-if="userForm.name.$touched really cool !! -->
+	          <p ng-message="minlength">Your name is too short.</p>
+	          <p ng-message="maxlength">Your name is too long.</p>
+	          <p ng-message="required">Your name is required.</p>
+			</div>
+			
+<label>Name3</label>
+    <input type="text" name="name" class="form-control" 
+        ng-model="main.name"
+        ng-minlength="5"
+        ng-maxlength="10"
+        required>
+          <!-- ngMessages goes here -->
+	    <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched"> <!-- do validation only out of focus on blur 
+		      ng-if="userForm.name.$touched really cool !! -->
+		  <p ng-message="minlength">Your name is too short.</p>
+		  <p ng-message="maxlength">Your name is too long.</p>
+		  <p ng-message="required">Your name is required.</p>
+		</div>

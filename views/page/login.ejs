@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <% include partials/head.ejs %>
+  </head>
+  <body>
+
+    <header>
+      <% include partials/header.ejs %>    
+    </header>
+
+        <div class="jumbotron">
+                     <form id="signIn" class="form-horizontal" name="loginForm" id="loginForm"
+                       enctype   =  "application/x-www-form-urlencoded"
+                       action    =  "/loginuser"
+                       method    =  "post" 
+                       novalidate>
+                      <fieldset>
+                      <h3 class="sign-in__title user-form__title nolinks">Sign in to Your Account</h3>
+                        <div class="sign-in__sign-up-info user-form__info">Don't have an account? <a class="sign-in__sign-up-link user-form__info-link" href="/createuser">Create one</a>.</div>
+                        <div class="form-group ">
+                          <label  for="inputEmail" class="col-lg-2 control-label">Username or Email Address</label>
+                          <div class="col-lg-10">
+                            <input name="name" type="text" class="form-control" id="inputEmail" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword" class="col-lg-2 control-label">Your Password</label>
+                          <div class="col-lg-10">
+                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password">
+                                <span class="has-warning"><%= typeof error!='undefined' ? error: '' %></span>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <button type="submit" class="btn btn-primary btn-success btn-lg">Log In →</button>
+                      <div><a class="sign-in__forgot-password-link user-form__info-link" href="https://tutsplus.com/password_resets/new">Forgotten your password?</a></div>
+                      <div><a class="sign-in__username-reminder-link user-form__info-link" href="https://tutsplus.com/account/username_reminders/new">Forgotten your Envato Tuts+ Premium username?</a></div>
+                    </form>
+        </div>
+
+   <footer>
+      <% include partials/footer.ejs %>
+    </footer>
+
+  </body>
+</html>

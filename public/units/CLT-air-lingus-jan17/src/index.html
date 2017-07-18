@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* https://meyerweb.com/eric/tools/css/reset/
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed,
+       figure, figcaption, footer, header, hgroup,
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    .jw-icon-fullscreen {
+        display:none !important;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-left{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.8);
+            z-index: 20;
+        }
+        #arrow-right{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 120px solid rgba(215,71,1,0.5);
+            z-index: 20;
+        }
+        img#videoIconLeft  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+        img#videoIconRight  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+
+        .social {
+        position: absolute;
+        height:10%;
+        width:5%;
+        top:0;
+        border: 1px solid red;
+        cursor: pointer;
+    }
+    .ieBugFix {
+            background-color: white;
+            /*cross browser opacity*/
+            /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+
+    */
+
+    .edgeLoad-EDGE-9712159 { visibility:hidden; }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+                <div id="Stage" class="EDGE-9712159">
+                
+                    <div id="Stage_slidez" class="edgeLoad-EDGE-9712159 slideShowContainer">
+                        <div id="Stage_slidez_slide_map" class="map">
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy10">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy10_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy10_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy9">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy9_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy9_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy8">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy8_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy8_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy7">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy7_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy7_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy6">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy6_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy6_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy5">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy5_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy5_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy4">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy4_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy4_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy3">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy3_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy3_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy2">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy2_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy2_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy1">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy1_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy1_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy0">
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy0_EllipseCopy2"></div>
+                                <div id="Stage_slidez_slide_map_hot_spot_metallic_lampCopy0_Ellipse"></div>
+                            </div>
+                            <div id="Stage_slidez_slide_map_slide5"></div>
+                        </div>
+                        <div id="Stage_slidez_text_container" class="text_container">
+                            <div id="Stage_slidez_text_container_tick" class="tick1"></div>
+                            <div id="Stage_slidez_text_container_custom_queue2" class="slide1"></div>
+                            <div id="Stage_slidez_text_container_take_in_the_view" class="slide2"></div>
+                            <div id="Stage_slidez_text_container_smart" class="slide3"></div>
+                            <div id="Stage_slidez_text_container_long_229" class="slide4"></div>
+                        </div>
+                        <div id="Stage_slidez_main_slide"></div>
+                    </div>
+                    <div id="Stage_book_now" class="edgeLoad-EDGE-9712159"></div>
+                </div>
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'CLT-air-lingus-jan17';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'https://google.com';
+        var edgeStartAnimation = {};
+
+
+
+        /*var follow = 'https://www.britishairways.com/rtad/travel/public/en_gb';
+        var facebook_link = 'https://www.facebook.com/britishairways';
+        var twitter_link = 'https://twitter.com/British_Airways';
+
+        var dataTitle = ['follow_link','facebook_link','twitter_link'];
+        var dataLink = [follow,facebook_link,twitter_link];*/
+
+    </script>
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <script>
+       AdobeEdge.loadComposition('air_lingus', 'EDGE-9712159', {
+        scaleToFit: "none",
+        centerStage: "none",
+        minW: "0px",
+        maxW: "undefined",
+        width: "700px",
+        height: "400px"
+    }, {"dom":{}}, {"dom":{}});
+    </script>
+
+
+
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="https://files.adspdbl.com/jwplayer/jwplayer-7.7.1/jwplayer.js"></script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+         <script src="https://files.adspdbl.com/jwplayer/jwplayer-7.7.1/jwplayer.js"></script>
+        <script src="<%= sourcemin %>"></script>
+    <!--/build -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+    </script>
+
+
+
+</body>
+</html>

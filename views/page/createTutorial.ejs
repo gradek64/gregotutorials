@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <% include partials/head.ejs %>
+  </head>
+  <body>
+  <style>
+          /* needed for smooth angular loaidng */
+     [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+    }
+  </style>
+
+    <header>
+      <% include partials/header.ejs %>    
+    </header>
+
+        <div class="jumbotron" ng-app="app" ng-cloak ng-controller="MainCtrl as main" style="border:3px solid #ccc;border-radius:5px;">
+                 <form id="signIn" class="form-horizontal" name="userForm" id="loginForm"
+                       enctype   =  "multipart/form-data"
+                       action    =  "/create"
+                       method    =  "post" 
+                       novalidate>
+
+                      <fieldset>
+                      <h3 class="sign-in__title user-form__title nolinks">Create Tutorial</h3>
+
+
+                      <div class="row">
+                              <div class="col-md-9 col-xs-12">
+                              
+                                        <div class="form-group">
+                                          <label for="inputEmail" class="col-lg-2 control-label">Title</label>
+                                              <div class="col-lg-10">
+                                                <input type="text" name="name" class="form-control" id="inputEmail" placeholder="title" ng-model="name" required>
+                                              
+                                                    <!-- ngMessages goes here -->
+                                                    <div class="help-block" ng-messages="userForm.name.$error" ng-if="userForm.name.$touched"> <!-- do validation only out of focus on blur 
+                                                           ng-if="userForm.name.$touched really cool !! -->
+                                                          <span ng-message="required">Your name is required.</span>
+                                                    </div>
+                                              </div>
+                                        </div>
+                                        <div  class="form-group">
+                                              <label for="inputEmail" class="col-lg-2 control-label">What programming language is about ?</label>
+                                              <div class="col-lg-10">
+                                                  <input type="email" name="emailfield" class="form-control" id="inputEmail" placeholder="Email"  ng-model="email.text" required>
+                                                     <!-- ngMessages goes here -->
+                                                    <div class="help-block" ng-messages="userForm.emailfield.$error" ng-if="userForm.emailfield.$touched"> <!-- do validation only out of focus on blur 
+                                                           ng-if="userForm.name.$touched really cool !! -->
+                                                          <span ng-message="required">Your email is required.</span>
+                                                          <span ng-message="email">Your email is invalid</span>
+                                                    </div>
+                            
+                                              </div>
+                                        </div>
+
+                      </div>
+                        
+                                      
+    
+                      </fieldset>
+                      <button  type="submit" class="btn btn-primary btn-success btn-lg" ng-disabled="userForm.$invalid">Create Account and Sign In →</button>
+                    </form>
+        </div>
+
+
+       
+
+   <footer>
+      <% include partials/footer.ejs %>
+    </footer>
+
+     <!-- attach custom scripts -->
+        <script type="text/javascript" src="js/angular/page_scripts/ang_ngMessages_password_visibility.js"></script> 
+        <script type="text/javascript" src="js/angular/page_scripts/ang_password_strength_check.js"></script>
+        <script type="text/javascript" src="js/angular/page_scripts/show_user_image.js"></script>
+    <!---->
+  </body>
+</html>

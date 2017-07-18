@@ -1,0 +1,277 @@
+Subject: Traffic Order - SG - SWG - Avid - 2015Q3|AU_CA_Agenda
+
+Below are the tags and trafficking instructions for the 2015Q3|AU_CA_Agenda campaign on Avid.
+
+Please import the following TruEffect DirectServe(TM) tags into your site's ad management software.
+
+
+------------------------------------------------------------
+             TruEffect Tag Implementation Notes:
+------------------------------------------------------------
+
+TruEffect PARTIAL TAGS:  If you choose not to implement an IFRAME tag in its
+entirety, you must change the value of the "ML_NIF=" parameters from "Y" to "N"
+to let us know that you have broken the tag apart.
+
+
+TruEffect TARGETS:  You may change target parameters in any or all of the tags
+from "_blank" to "_top" (or any other valid targeting string) to conform to
+your site's policy.
+
+
+TruEffect CACHEBUSTER:  Cachebusting macros are not required as the TruEffect 
+tags already contain cachebusting. However if you would like to add your own 
+cachebusting macro you can add it into the placeholder within the ad tags. "&random="
+
+
+TruEffect CLICKTHROUGHS:  In order for your site to track clickthroughs on
+these banners, append the url for your clickthrough counter (sometimes called
+a redirector) to the IFRAME/SCRIPT SRC strings (after the &@CPSC@=), and
+prepend it to the HREF strings.
+
+If your site does not use a clickthrough counter, then you do not have to
+do anything.  You can use the TruEffect tags as-is and everything will be
+reported and tracked by our system.
+
+REDIRECTORS: For click redirect tag, please place a destination URL or tag 
+after the "&click=" in the click redirect ad tag.  
+
+------------------------------------------------------------
+AD PLACEMENTS:  Please use these URLs:
+------------------------------------------------------------
+
+
+
+
+
+
+
+*********************************************************************************
+Placement: Avid - 1x1 - Agenda - Anthem/think
+*********************************************************************************
+
+Insertion Order: 26664169
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_Agenda-Anthem
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664170
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664170_26664139_1x1_26664140_26664170" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664170_26664139_1x1_26664140_26664170&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664170_26664139_1x1_26664140_26664170&af=26663413&ml_pbi=-26664170&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - MRI
+*********************************************************************************
+
+Insertion Order: 26664173
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_MRI
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664174
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664174_26664139_1x1_26664145_26664174" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664174_26664139_1x1_26664145_26664174&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664174_26664139_1x1_26664145_26664174&af=26663413&ml_pbi=-26664174&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Dogs
+*********************************************************************************
+
+Insertion Order: 26664177
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_Dogs
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664178
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664178_26664139_1x1_26664150_26664178" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664178_26664139_1x1_26664150_26664178&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664178_26664139_1x1_26664150_26664178&af=26663413&ml_pbi=-26664178&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Dropout
+*********************************************************************************
+
+Insertion Order: 26664181
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_Dropout
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664182
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664182_26664139_1x1_26664155_26664182" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664182_26664139_1x1_26664155_26664182&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664182_26664139_1x1_26664155_26664182&af=26663413&ml_pbi=-26664182&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Crime
+*********************************************************************************
+
+Insertion Order: 26664185
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_Crime
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664186
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664186_26664139_1x1_26664160_26664186" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664186_26664139_1x1_26664160_26664186&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664186_26664139_1x1_26664160_26664186&af=26663413&ml_pbi=-26664186&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Train
+*********************************************************************************
+
+Insertion Order: 26664189
+IO  Description: Avid_Native-Video_VIDEO_CSuite/LOB_1x1_Native_Train
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664190
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664190_26664139_1x1_26664165_26664190" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664190_26664139_1x1_26664165_26664190&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664190_26664139_1x1_26664165_26664190&af=26663413&ml_pbi=-26664190&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Agenda - Anthem
+*********************************************************************************
+
+Insertion Order: 26664217
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_Agenda-Anthem
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664218
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664218_26664139_1x1_26664140_26664218" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664218_26664139_1x1_26664140_26664218&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664218_26664139_1x1_26664140_26664218&af=26663413&ml_pbi=-26664218&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - MRI
+*********************************************************************************
+
+Insertion Order: 26664221
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_MRI
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664222
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664222_26664139_1x1_26664145_26664222" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664222_26664139_1x1_26664145_26664222&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664222_26664139_1x1_26664145_26664222&af=26663413&ml_pbi=-26664222&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Dogs
+*********************************************************************************
+
+Insertion Order: 26664225
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_Dogs
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664226
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664226_26664139_1x1_26664150_26664226" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664226_26664139_1x1_26664150_26664226&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664226_26664139_1x1_26664150_26664226&af=26663413&ml_pbi=-26664226&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Dropout
+*********************************************************************************
+
+Insertion Order: 26664229
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_Dropout
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664230
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664230_26664139_1x1_26664155_26664230" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664230_26664139_1x1_26664155_26664230&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664230_26664139_1x1_26664155_26664230&af=26663413&ml_pbi=-26664230&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Crime
+*********************************************************************************
+
+Insertion Order: 26664233
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_Crime
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664234
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664234_26664139_1x1_26664160_26664234" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664234_26664139_1x1_26664160_26664234&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664234_26664139_1x1_26664160_26664234&af=26663413&ml_pbi=-26664234&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************
+Placement: Avid - 1x1 - Train
+*********************************************************************************
+
+Insertion Order: 26664237
+IO  Description: Avid_Native-Video-BONUS_VIDEO_CSuite/LOB_1x1_Native_Train
+Campaign Name:  2015Q3|AU_CA_Agenda
+Flight Dates:  08/11/2015 - 08/11/2015
+Impressions:  1
+Placement Id:  26664238
+
+<!-- Text Link -->
+<A HREF="http://media.ibm.com/click?spacedesc=26664238_26664139_1x1_26664165_26664238" TARGET="_blank">
+
+<IMG SRC="http://media.ibm.com/image?spacedesc=26664238_26664139_1x1_26664165_26664238&random=" WIDTH=1 HEIGHT=1 ALT=" " BORDER=0>
+</A>
+
+
+Click Redirector/Click Tracker: http://media.ibm.com/click.ng?spacedesc=26664238_26664139_1x1_26664165_26664238&af=26663413&ml_pbi=-26664238&ml_camp=26663386&ml_crid=26673131&click=
+*********************************************************************************

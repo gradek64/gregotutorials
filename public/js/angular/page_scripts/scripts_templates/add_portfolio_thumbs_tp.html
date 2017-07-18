@@ -1,0 +1,68 @@
+   <style type="text/css">
+	 	
+	 html, body {
+        height: 100%;
+        background-color: #d8d7d7;
+
+    }
+	
+	.thumb {
+		 transition:all 0.5s ease;
+		 cursor: pointer;
+	}
+	.thumb:hover {
+		 box-shadow: inset 0 0 0 18px #404e5d;
+	}
+
+	.active { box-shadow: inset 0 0 0 18px #404e5d;} 
+
+	
+                
+   
+   
+    
+
+
+
+</style>
+<div id="content" class="container">
+		<div class="row col-md-12" >
+
+
+
+					<div  class=" col-md-12 ">
+
+					 			 <h1>Hi, I am Greg !</h1>
+					 			 <h2>Example body text</h2>
+					 			 <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+					 			 <p><small>This line of text is meant to be treated as fine print.</small></p>
+					 			 <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+					 			 <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+					 			 <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+								  <p>
+									  
+
+								</p>
+								 <div class="col-md-12" ng-click="gotoElement('portfolio')"   >
+								 		<a href="#" class="btn btn-info align-middle" style="width:200px;height:200px;max-width: 300px;margin: 0 auto;display: block;border-radius: 50%;line-height: 11"><span class="align-middle">explore my portfolio below</span></a>
+
+									   <!--  <img src="images/arrow_down_portfolio.gif" style=";max-width: 100px;max-height: 100px;margin: 0 auto;display: block;"> -->
+								 </div>
+					</div>	
+		</div>	
+					
+		<div id="portfolio" class="row col-md-12" style="margin-top:20%">
+					      <div class="col-md-3 offset-md-1" ng-repeat="item in thumbs track by $index">
+					              <div class="panel panel-primary"> <!-- style="display: inline-block;" -->
+					                <div class="panel-body thumb"  ng-click="changeClass($index,$event)" >
+					                <img src="{{item.thumbnail}}" />
+					                </div>
+					              </div>
+					</div>
+
+
+
+
+
+		</div>
+</div>

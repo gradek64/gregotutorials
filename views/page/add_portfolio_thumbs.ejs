@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <% include partials/head.ejs %>
+     <style>
+          /* needed for smooth angular loaidng */
+     [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+    }
+    html,body {
+        height: auto;
+
+        background:url('images/porfolio_bg.jpg') top left repeat #ccc;
+    }
+
+      .hide-overlay.overlay  {
+        left: -50%;
+      }
+     .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        -webkit-transition: all .4s cubic-bezier(.25, .8, .25, 1);
+        transition: all .4s cubic-bezier(.25, .8, .25, 1);
+        z-index: 100;
+        display: block;
+
+
+    }
+
+    
+
+    .overlay-content {
+
+            /*height: 100%;*/
+            overflow: scroll;
+            display: block;
+    }
+
+    .background-content.addAutoOverflow {
+        overflow:auto;
+    }
+
+    .background-content{
+        height: 100%;
+        display: block;
+        /*overflow:scroll;*/
+
+    }
+
+    .one-edge-shadow {
+  -webkit-box-shadow: 0 13px 6px -6px rgba(0,0,0,0.6);
+     -moz-box-shadow: 0 13px 6px -6px rgba(0,0,0,0.6);
+          box-shadow: 0 13px 6px -6px rgba(0,0,0,0.6);
+}
+
+  </style>
+  </head>
+  <body ng-app="thumbs-module" ng-controller="myCTRL">
+
+  
+
+     <!-- <div id="lightboxOverlay" class="hide-overlay overlay">
+           <div class="overlay-content">
+                <overlay/>
+          </div>
+     </div> -->
+
+
+<lightbox-thumbs>                           
+              <!-- <iframe id="avidFrame" src="{{iframe_source}}" width="100%" frameborder="0" iframe_ratio='1.62'></iframe> -->
+              <iframe id="avidFrame" src="" width="100%" frameborder="0"></iframe>
+  </lightbox-thumbs>
+
+ <div id="content" class="background-content">
+   <!-- lightbox setup -->
+  
+  <!-- lightbox setup -->            
+
+  <!-- <div style="position: absolute;" class="content "></div> -->
+
+   <!--  <header>
+      <% include partials/header.ejs %>    
+    </header> -->
+
+    <div class="row ne-edge-shadow" style="background-color: #2c3e50;padding: 10%">
+      
+      <div class="col-md-6">
+        
+       <blockquote>
+          <<cite style="color: #b4bcc2;font-size: larger;">What is the life for if it is not for living ? go and explore !</cite>
+          <small>myself<cite title="Source Title"></cite></small>
+       </blockquote>
+        <p class="align-middle" ng-click="scrollToPorfolio('portfolio')" style="padding: 25px;border:1px solid #18bc9c;border-radius: 10px;color:#18bc9c;width:250px;cursor: pointer;">explore my portfolio below</p>
+            
+
+      </div>
+
+    </div>
+
+                     <div class="row" ng-cloak  style="border:3px solid #ccc;border-radius:5px;padding-top: 50px;">   
+                          
+                            <div><thumbs></thumbs></div>
+
+                      </div>
+   
+
+
+
+   <footer>
+      <% include partials/footer.ejs %>
+    </footer>
+  <!-- underscore array library -->
+  <script src="js/angular/underscore-min.js"></script>
+  <!-- pagination service-->
+  <script>var ang = angular.module('thumbs-module', []);</script>
+  <script src="js/angular/page_scripts/pagination_service.js"></script>
+  <!-- main for this page-->
+  <script src="js/angular/page_scripts/add_portfolio_thumbs.js"></script>
+ </div>
+  </body>
+</html>

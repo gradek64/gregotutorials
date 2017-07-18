@@ -1,0 +1,12 @@
+/**
+ * custom js settings.
+ */
+{
+	"camelcase" : true,
+	"eqeqeq" : true,
+	"indent" : 4,
+	"latedef" : true,
+	"unused" : true,
+	"trailing" : true,
+	"maxdepth" : 3
+}

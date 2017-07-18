@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-left{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.8);
+            z-index: 20;
+        }
+        #arrow-right{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 120px solid rgba(215,71,1,0.5);
+            z-index: 20;
+        }
+        img#videoIconLeft  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+        img#videoIconRight  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+
+    */
+        .edgeLoad-EDGE-2154039 { visibility:hidden; }
+
+        .fb_iframe_widget, .fb-share-button {
+            position:absolute !important;
+            bottom: 0;
+            right: 0;
+            z-index: 10;
+            width: 13%;
+            height: 8%;
+            background-color: white;
+            opacity: 0;
+
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+            
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+
+    <div id="" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+
+            <div id="Stage" class="EDGE-2154039">
+
+                <div id="Stage_mainScroller" class="edgeLoad-EDGE-2154039">
+                    <div id="Stage_mainScroller_logo"></div>
+                    <div id="Stage_mainScroller_mainScrollerContainer" class="mainScrollerContainer">
+                        <div id="Stage_mainScroller_mainScrollerContainer_gallery">
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_shop_now2"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_bg"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_side_gallery" class="slideShowFade">
+                                <div id="Stage_mainScroller_mainScrollerContainer_gallery_side_gallery_side_image_1" class="slide0"></div>
+                                <div id="Stage_mainScroller_mainScrollerContainer_gallery_side_gallery_side_image_2" class="slide1"></div>
+                                <div id="Stage_mainScroller_mainScrollerContainer_gallery_side_gallery_side_image_3" class="slide2"></div>
+                            </div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_arrowLeft"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_arrowRight"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_gallery_gallery_container" class="slideShow">
+                                <div id="Stage_mainScroller_mainScrollerContainer_gallery_gallery_container_gallery_container_inner" class="slideShowContainer">
+                                    <div id="Stage_mainScroller_mainScrollerContainer_gallery_gallery_container_gallery_container_inner_gallery_img1" class="image0"></div>
+                                    <div id="Stage_mainScroller_mainScrollerContainer_gallery_gallery_container_gallery_container_inner_gallery_img2" class="image1"></div>
+                                    <div id="Stage_mainScroller_mainScrollerContainer_gallery_gallery_container_gallery_container_inner_gallery_img3" class="image2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol">
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_follow"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb10"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb9"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb8"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb7"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb6"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb5"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb4"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb3"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb2"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_thumb1"></div>
+                            <div id="Stage_mainScroller_mainScrollerContainer_instagram_symbol_instagram"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Stage_bottom_bar" class="edgeLoad-EDGE-2154039"></div>
+                <div id="Stage_store" class="edgeLoad-EDGE-2154039"></div>
+                <div id="Stage_insgram_bttn_swap" class="edgeLoad-EDGE-2154039"></div>
+                <div id="Stage_Rectangle" class="edgeLoad-EDGE-2154039"></div>
+                <div id="Stage_instagram_bttn" class="edgeLoad-EDGE-2154039">
+                    <div id="Stage_instagram_bttn_instagram_bttn_container" class="instagram_bttn_container">
+                        <div id="Stage_instagram_bttn_instagram_bttn_container_instagram_bttn2"></div>
+                        <div id="Stage_instagram_bttn_instagram_bttn_container_BACK"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="shareBttn" class="fb-share-button" data-href="http://www.sorelfootwear.co.uk/" data-layout="button"></div>
+
+        <!-- mobile launch video button if there is not included in design already
+            <div id="arrow-right" class="mobileLaunchVideo"></div>
+            <img id="videoIconRight" src="img/videoIconRight.png"/>
+        -->
+
+            <!-- uncomment below for video units
+            <style> #video-section { position:absolute; top:0; left:0%; height:100%; width:100%; z-index:10; margin:auto; } #closer{ position: absolute; top:1.4%; z-index:100; right:1%; cursor:pointer; } #video-expand-bar { display:block; position:absolute; display:none; cursor:pointer; } #video-section #video-container { height: 82% !important; margin: auto; overflow: hidden; /*margin-top:6.2%;*/ width: 100%; } #lightbox { width:100%; height:100%; position:absolute; top:0; left:0; background-color:black; z-index:5; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity:0.8; }</style>
+            <div id="closer" style="width:3%;height:4.5%;"> <img src="img/close.png" style="width:100%;height:100%"/> </div><div style="height: 100% !important;margin: auto;overflow: hidden;margin-top:6.2%;width: 100%;"  id="video-section"> <div id="video-container"> </div> </div> <div id="lightbox"></div>
+        -->
+
+
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'sorel_001';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'https://ad.atdmt.com/c/go;p=11147200805754;a=11147200805774;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var shopNow = 'https://ad.atdmt.com/c/go;p=11147200805754;a=11147200805774;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var medinaBlackShoe = 'https://ad.atdmt.com/c/go;p=11147200805751;a=11147200805771;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var majorPremiumBootie = 'https://ad.atdmt.com/c/go;p=11147200805750;a=11147200805770;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var mojorPremiumHighShoe = 'https://ad.atdmt.com/c/go;p=11147200805749;a=11147200805772;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var instagramLink = 'https://ad.atdmt.com/c/go;p=11147200805753;a=11147200805773;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+        var tivioliBoot = 'https://ad.atdmt.com/c/go;p=11147200806710;a=11147200806708;ev.a=1;idfa=;idfa_lat=;aaid=;aaid_lat=;cache='+Math.floor(Math.random()*1e7);
+
+        var edgeStartAnimation = {};
+        var instagramLinks =  {
+
+            thumb1:['https://instagram.com/p/7YFHPfg1ET/','emskicross'],
+            thumb2:['https://instagram.com/p/7a1_X2CDW3/','oliviajwayne'],
+            thumb3:['https://instagram.com/p/7crOAACDSh/','oliviajwayne sky sports'],
+            thumb4:['https://instagram.com/p/7fqMV7BGr3/','stephaniepeers Mayfairs'],
+            thumb5:['https://instagram.com/p/7kRqHRDDpY/','carolineflack Bestival'],
+            thumb6:['https://instagram.com/p/7khTQlDDkl/','carolineflack enjoy festival'],
+            thumb7:['https://instagram.com/p/7k1Q6FjDkr/','festival cazza'],
+            thumb8:['https://instagram.com/p/7ypBqxBla9/','femmehq double trouble'],
+            thumb9:['https://instagram.com/p/70LPgyp6o2/','bonnierakhit Another day'],
+            thumb10:['https://instagram.com/p/7x2hroJ6lb/','bonnierakhit On route']
+        }
+
+    </script>
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="sorel_edge_edgePreload.js"></script>
+
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+    <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj";</script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-12/jwplayer.js"></script>
+        <script>jwplayer.key="LsFu9dvN3vqUGyQj2fLGovCdzwau2NBj"</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+    </script>
+
+
+
+</body>             
+</html>

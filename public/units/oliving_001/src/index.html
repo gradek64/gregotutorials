@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed, 
+       figure, figcaption, footer, header, hgroup, 
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+   
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version*/
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-down{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.5);
+            z-index: 20;
+        }
+        img#videoIcon  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+      */
+
+        .social {
+            border-width: 0px;
+            border-color:#5f9f0d;
+            border-style: solid;
+            border-radius: 50%;
+            transform-origin:center;
+
+            -webkit-transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+        }
+
+        .social:hover {
+            /*-webkit-transform: rotate(360deg) scale(1.1);*/
+            -webkit-transform:scale(1.3);
+            -moz-transform:scale(1.3);
+            -o-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+
+        }
+
+
+
+        .hoverEffect {
+            border-width: 0px;
+            border-color:#5f9f0d;
+            border-style: solid;
+            border-radius: 50%;
+            transform-origin:center;
+
+            -webkit-transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+        }
+
+        .hoverEffect:hover {
+            /*-webkit-transform: rotate(360deg) scale(1.1);*/
+            -webkit-transform:scale(1.1);
+            -moz-transform:scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+
+        }
+
+
+
+        .edgeLoad-EDGE-8444901 { visibility:hidden; }
+
+
+
+
+
+
+    
+    </style>
+    <link rel="stylesheet" href="http://files.adspdbl.com/assets/video-js.min.css" type="text/css" />
+    <link href="http://files.adspdbl.com/assets/videojs.imageOverlay.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://files.adspdbl.com/layerslider/css/layerslider.css" type="text/css" />
+    <link rel="stylesheet" href="css/scrollbar.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <div id="tracking-pixel" style="position:absolute;height:1px;width:1px;"></div>
+
+    <div id="indigo-barc-001" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+            <div id="Stage" class="EDGE-8444901">
+
+                <div id="Stage_olive_bg" class="edgeLoad-EDGE-8444901"></div>
+                <div id="Stage_logo_click" class="edgeLoad-EDGE-8444901"></div>
+                <div id="Stage_slideShow" class="edgeLoad-EDGE-8444901">
+                    <div id="Stage_slideShow_SlideShowContainer">
+                        <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol">
+                            <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_sliderArrowDown" class="arrowDOWN"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_sliderArrowUp" class="arrowUP"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer" class="productContainer">
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_hot_dog_recipe" class="product0"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_pizza_mozarella_recipe" class="product2"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_asparagus_recipe" class="product4"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_breadsticks_recipe" class="product3"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_broculi_recipe" class="product7"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_kids_pizza_recipe" class="product6"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_medi_parcel_recipe" class="product1"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_recipiesContainer_spaghetti_recipe" class="product5"></div>
+                            </div>
+                            <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes" class="recipes">
+                                <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer" class="recipiesContainer">
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec8" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec7" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec6" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec5" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec4" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec3" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec2" class="hoverEffect"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_recipes_recipesContainer_rec1" class="hoverEffect"></div>
+                                </div>
+                            </div>
+                            <div id="Stage_slideShow_SlideShowContainer_in_the_kitchen_slide_symbol_in_the_kitchen_slide2"></div>
+                        </div>
+                        <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol">
+                            <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu">
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_snacks"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_franks"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_salami"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_poultry"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_kabana"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_ham"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_continetals"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_backon"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_range_menu_range_menu"></div>
+                            </div>
+                            <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products" class="rangeContainer">
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym" class="product0">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_bacon_selection_sym_bacon_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym" class="product1">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection5"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection4"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_continetals_selection_sym_condiments_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym" class="product6">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_franks_selection_sym_franks_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym" class="product2">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_ham_selection_sym_ham_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_kabana_selection_sym" class="product3">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_kabana_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_kabana_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_kabana_selection_sym_kabana_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym" class="product4">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_poulry_selection_sym_poulry_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym" class="product5">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_selection4"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_selection3"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_selection2"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_salami_selection_sym_salami_selection"></div>
+                                </div>
+                                <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_snacks_selection_sym" class="product7">
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_snacks_selection_sym_selection1"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_snacks_selection_sym_selection0"></div>
+                                    <div id="Stage_slideShow_SlideShowContainer_the_range_slide_symbol_the_range_slide_products_snacks_selection_sym_snacks_selection"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol">
+                            <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_the_wellness_button"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_the_proccess_button"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_the_concept_button"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_oliving_all_slides" class="benefitsInfo">
+                                <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_oliving_all_slides_the_concept" class="product0"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_oliving_all_slides_wellnesss" class="product2"></div>
+                                <div id="Stage_slideShow_SlideShowContainer_oliving_by_hand_symbol_oliving_all_slides_the_proccess" class="product1"></div>
+                            </div>
+                        </div>
+                        <div id="Stage_slideShow_SlideShowContainer_download_slide2">
+                            <div id="Stage_slideShow_SlideShowContainer_download_slide2_download_link" class="download"></div>
+                            <div id="Stage_slideShow_SlideShowContainer_download_slide2_download_slide"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Stage_concealer" class="edgeLoad-EDGE-8444901"></div>
+                <div id="Stage_button3" class="edgeLoad-EDGE-8444901 button3"></div>
+                <div id="Stage_button2" class="edgeLoad-EDGE-8444901 button2"></div>
+                <div id="Stage_button1" class="edgeLoad-EDGE-8444901 button1"></div>
+                <!-- <div id="Stage_video" class="edgeLoad-EDGE-8444901"></div> -->
+                <div id="Stage_facebook_icon" class="edgeLoad-EDGE-8444901 social"></div>
+                <div id="Stage_twitter_icon" class="edgeLoad-EDGE-8444901 social"></div>
+                <div id="Stage_pin_icon" class="edgeLoad-EDGE-8444901 social"></div>
+            </div>
+
+       </div>
+
+        <!-- mobile launch video button if there is not included in design already
+        <div id="arrow-down" class="mobileLaunchVideo"></div>
+        <img id="videoIcon" src="img/videoIcon.png"/>
+        -->
+
+        <!-- video non edge version. Uncomment here-->
+        <!-- video close button-->
+        <div id="closer" style="width:3%;height:4.5%;">
+            <img src="img/close.png" style="width:100%;height:100%"/>
+        </div>
+        <!-- end video close button -->
+
+        <!-- video section-->
+        <div id="video-section">
+
+            <!-- end video expand -bar-->
+            <div id="video-container">
+
+            </div>
+
+        </div>
+        <!-- end video section-->
+        <!-- lightbox-->
+        <div id="lightbox"></div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/v6-9/jwplayer.js"></script>
+    <script>jwplayer.key="wK7eTrZ5SKJIVMpoKVgUi57uw4omDtNdnzewQBtMXlE="</script>
+    <script src="js/lib/resize.js"></script>
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+        <script src="http://files.adspdbl.com/jwplayer/v6-9/jwplayer.js"></script>
+        <script>jwplayer.key="wK7eTrZ5SKJIVMpoKVgUi57uw4omDtNdnzewQBtMXlE="</script>
+        <script src="<%= sourcemin %>"></script>    
+    <!--/build -->
+
+    
+
+    <script type="text/javascript">
+        
+
+        var campaign = 'oliving_001';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'http://ad.doubleclick.net/ddm/clk/286020733;112897838;n';
+        var facebookLink = 'http://ad.doubleclick.net/ddm/clk/286019632;112895740;j';
+        var twitterLink = 'http://ad.doubleclick.net/ddm/clk/286019357;112897473;s';
+        var pinLink = 'http://ad.doubleclick.net/ddm/clk/286020914;112897837;n';
+        var videoClick = 'http://ad.doubleclick.net/ddm/clk/286019140;112891546;d';
+        var downloadLink = 'http://ad.doubleclick.net/ad/N4038.1124336AVIDGLOBALMEDIA.COM/B8344150.112893598;sz=1x1;ord='+randomnumber;
+
+        var edgeStartAnimation = {};
+        // tracking
+        var $ = ADSPDBLjQuery;
+       
+
+    </script>
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="olive_001_edgePreload.js"></script>
+
+</body>             
+</html>

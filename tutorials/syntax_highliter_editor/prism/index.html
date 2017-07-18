@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+	<link href="prism.css" rel="stylesheet" />
+</head>
+<body>
+<pre class=" language-css" data-language="css"><code class=" language-css">
+	@import "somestyle.css"
+
+body {
+	background: white;
+}
+
+.wrapper {
+	background: #F88;
+	color: #454545;
+}
+
+.box::after {
+	content: "...";
+}
+</code></pre>
+
+
+<div id="set" style="width: 450px;height: 530px;">
+	<button onclick="set();">append</button>
+	
+	
+</div>
+
+
+	<script src="prism.js"></script>
+	<script>
+		function set(){
+			document.getElementById('set').innerHTML = '<pre class=" language-css" data-language="css"><code class=" language-css"></br>'+
+			'@import body{background:white;}'+
+			'</code></pre>';
+		}
+
+	</script>
+</body>
+</html>
+

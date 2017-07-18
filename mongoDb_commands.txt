@@ -1,0 +1,27 @@
+use (database name) - create/switch to database 
+
+
+//Collection (eqwiwalent to tables)
+
+db.getCollectionNames() - shows all collections ;
+
+db.beers.find() , db['beers'].find()  -shows the content of reqestes collections
+
+
+
+//Databases 
+shows Dbs - shows all database wich are not empty (it wont list empty database);
+
+
+
+
+//***************** MONGOOSE node.js plugin commands ***************/
+
+
+find field by name 
+
+Person.findOne({ 'name.last': 'Ghost' },
+
+find queyr by id 
+
+Bear.findById(req.params.bear_id, function(err, bear) {}

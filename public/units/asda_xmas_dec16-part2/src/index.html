@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ad-Break</title>
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+       html, body, div, span, applet, object, iframe,
+       h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+       a, abbr, acronym, address, big, cite, code,
+       del, dfn, em, img, ins, kbd, q, s, samp,
+       small, strike, strong, sub, sup, tt, var,
+       b, u, i, center,
+       dl, dt, dd, ol, ul, li,
+       fieldset, form, label, legend,
+       table, caption, tbody, tfoot, thead, tr, th, td,
+       article, aside, canvas, details, embed,
+       figure, figcaption, footer, header, hgroup,
+       menu, nav, output, ruby, section, summary,
+       time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    .jw-icon-fullscreen {
+        display:none !important;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .campaign-link {
+        cursor:pointer;
+    }
+
+    /* full width, height */
+    html,body {
+        height:100%;
+        width:100%;
+        overflow:hidden;
+    }
+    svg {
+        width:100% !important;
+        height:100% !important;
+    }
+
+    img {
+        box-shadow: #000 0em 0em 0em;
+    }
+
+    .jwfullscreen {display:none;}
+    /* uncomment for video - non edge version
+    #video-section {
+        position:absolute;
+        top:0;
+        left:0%;
+        height:100%;
+        width:100%;
+        z-index:10;
+        margin:auto;
+
+
+    }
+    #closer{
+        position: absolute;
+        top:1.4%;
+        z-index:100;
+        right:1%;
+        cursor:pointer;
+    }
+    #video-expand-bar {
+        display:block;
+        position:absolute;
+        display:none;
+        cursor:pointer;
+    }
+    #video-section #video-container {
+        height: 82% !important;
+        margin: auto;
+        overflow: hidden;
+        margin-top:6.2%;
+        width: 100%;
+    }
+    #lightbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color:black;
+        z-index:5;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        opacity:0.8;
+    }
+
+     /*extra video play button for mobile
+
+        #arrow-left{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 120px solid transparent;
+            border-top: 120px solid rgba(54,167,231,0.8);
+            z-index: 20;
+        }
+        #arrow-right{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 120px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 120px solid rgba(215,71,1,0.5);
+            z-index: 20;
+        }
+        img#videoIconLeft  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+        img#videoIconRight  {
+            display: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: auto;
+            z-index: 21;
+        }
+
+        .social {
+        position: absolute;
+        height:10%;
+        width:5%;
+        top:0;
+        border: 1px solid red;
+        cursor: pointer;
+    }
+    .ieBugFix {
+            background-color: white;
+            /*cross browser opacity*/
+            /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+
+    */
+
+    .edgeLoad-EDGE-4183224 { visibility:hidden; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="" style="width:100%;height:100%;position:absolute;">
+    	<!-- loader gif background- keep this in -->
+    	<div id="container" style="margin:0;padding:0;height:100%;background: url(img/loader-bar.gif) no-repeat center center;">
+
+            <div id="Stage" class="EDGE-4183224">
+        
+                <div id="Stage_bg_top2" class="edgeLoad-EDGE-4183224">
+                    <div id="Stage_bg_top2_bg_top"></div>
+                </div>
+                <div id="Stage_bg_bottom" class="edgeLoad-EDGE-4183224"></div>
+                <div id="Stage_slideshow" class="edgeLoad-EDGE-4183224 slideshow">
+                    <div id="Stage_slideshow_slideshowContainer" class="slideshowContainer">
+                        <div id="Stage_slideshow_slideshowContainer_slide2" class="image_1">
+                            <div id="Stage_slideshow_slideshowContainer_slide2_view_button06"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide2_view_button05"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide2_view_button04"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide2_card04_porridge"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide2_card05_secret_santa"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide2_card06_gluten_free"></div>
+                        </div>
+                        <div id="Stage_slideshow_slideshowContainer_slide1" class="image_0">
+                            <div id="Stage_slideshow_slideshowContainer_slide1_card03_biscuits"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide1_card02_giovanna"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide1_card01_unusual_foods"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide1_view_button03"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide1_view_button02"></div>
+                            <div id="Stage_slideshow_slideshowContainer_slide1_view_button01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Stage_arrow_left" class="edgeLoad-EDGE-4183224"></div>
+                <div id="Stage_arrow_right" class="edgeLoad-EDGE-4183224"></div>
+            </div>
+
+        <!--<img class="responsive campaign-link" data-title="Main Image Tag" style="display:block;clear:both;width:100%;height:100%;" src="img/main.jpg" />-->
+
+        <!-- mobile launch video button if there is not included in design already
+            <div id="arrow-right" class="mobileLaunchVideo"></div>
+            <img id="videoIconRight" src="img/videoIconRight.png"/>
+        -->
+
+
+        <!-- social button
+        <div class="social ieBugFix campaign-link" style="right:11%;width:17%"></div>
+        <div class="social ieBugFix campaign-link" style="right:6%;width:6%"></div>
+        <div class="social ieBugFix campaign-link" style="right:0;width:6%;"></div>
+        -->
+
+
+            <!-- uncomment below for video units
+            <style> #video-section { position:absolute; top:0; left:0%; height:100%; width:100%; z-index:10; margin:auto; } #closer{ position: absolute; top:1.4%; z-index:100; right:1%; cursor:pointer; } #video-expand-bar { display:block; position:absolute; display:none; cursor:pointer; } #video-section #video-container { height: 100% !important; margin: auto; overflow: hidden; /*margin-top:6.2%;*/ width: 100%; } #lightbox { width:100%; height:100%; position:absolute; top:0; left:0; background-color:black; z-index:5; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); opacity:0.8; }</style>
+            <div id="closer" style="width:3%;height:4.5%;"> <img src="img/close.png" style="width:100%;height:100%"/> </div><div style="height: 100% !important;margin: auto;overflow: hidden;margin-top:0;width: 100%;" id="video-section"> <div id="video-container"> </div> </div> <div id="lightbox"></div>
+        -->
+
+
+
+        </div>
+    </div>
+
+    <a href="" id="openLink" target="_blank"></a>
+
+    <script type="text/javascript">
+
+
+        var campaign = 'asda_xmas_dec16-part2';
+        var randomnumber=Math.floor(Math.random()*10000000000);
+        var clickTag = 'https://ad.doubleclick.net/ddm/trackclk/N401804.1747852AVID.COMUK/B10445722.142085053;dc_trk_aid=313867530;dc_trk_cid=75750241;dc_lat=;dc_rdid=;tag_for_child_directed_treatment='+Math.floor(Math.random()*1e7);
+
+        var card01_unusual_foods = 'https://ad.doubleclick.net/ddm/clk/314891372;142085053;b';
+        var card02_giovanna = 'https://ad.doubleclick.net/ddm/clk/314891373;142085053;c';
+        var card03_biscuits = 'https://ad.doubleclick.net/ddm/clk/314894705;142085053;e';
+        var card04_porridge = 'https://ad.doubleclick.net/ddm/clk/314894706;142085053;f';
+        var card05_secret_santa = 'https://ad.doubleclick.net/ddm/clk/314691652;142085053;a';
+        var card06_gluten_free = 'https://ad.doubleclick.net/ddm/clk/314694725;142085053;e';
+
+
+        /*var follow = 'http://www.britishairways.com/rtad/travel/public/en_gb';
+        var facebook_link = 'https://www.facebook.com/britishairways';
+        var twitter_link = 'https://twitter.com/British_Airways';
+
+        var dataTitle = ['follow_link','facebook_link','twitter_link'];
+        var dataLink = [follow,facebook_link,twitter_link];*/
+
+    </script>
+
+
+    <!--Adobe edge code goes below here -->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+
+    <script>
+       AdobeEdge.loadComposition('asda_xmas_dec16-part2', 'EDGE-4183224', {
+        scaleToFit: "none",
+        centerStage: "none",
+        minW: "0%",
+        maxW: "undefined",
+        width: "100%",
+        height: "100%"
+    }, {"dom":{}}, {"dom":{}});
+    </script>
+
+
+
+    <!-- build:remove -->
+    <script type="text/javascript" src="js/lib/adspdbl-jq-comp.js"></script>
+    <script type="text/javascript" src="js/lib/swfobject.js"></script>
+    <script type="text/javascript" src="js/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="js/lib/ismobile.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+    <script src="http://files.adspdbl.com/jwplayer/jwplayer-7.7.1/jwplayer.js"></script>
+
+    <script src="js/shared-functionsUncompressed.js"></script>
+    <!-- /build -->
+
+    <!-- build:template
+         <script src="http://files.adspdbl.com/jwplayer/jwplayer-7.7.1/jwplayer.js"></script>
+        <script src="<%= sourcemin %>"></script>
+    <!--/build -->
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        // tracking
+        var $ = ADSPDBLjQuery;
+
+
+    </script>
+
+
+
+</body>
+</html>

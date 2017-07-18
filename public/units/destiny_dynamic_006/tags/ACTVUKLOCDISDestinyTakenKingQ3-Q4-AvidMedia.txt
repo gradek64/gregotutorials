@@ -1,0 +1,40 @@
+Placement Details: 
+Placement ID: 14639558 
+Agency: MEC Activision MASTER 
+Campaign: Activision UK - ACTV / UK / LOC / DIS / Destiny Taken King / Q3-Q4 
+Campaign ID: 573003 
+Site: Avid Media - UK 
+Placement Name: Content Play_video
+Placement Format Type: Tracking Only
+Booked Impressions: 77247 
+Placement Dates:
+30/08/2015 21:00:00 - 04/10/2015 20:59:00
+
+//To track Impressions use the following URL:
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=14639558&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639558&PluID=0&ord=[timestamp]
+====================================================
+Placement Details: 
+Placement ID: 14639557 
+Agency: MEC Activision MASTER 
+Campaign: Activision UK - ACTV / UK / LOC / DIS / Destiny Taken King / Q3-Q4 
+Campaign ID: 573003 
+Site: Avid Media - UK 
+Placement Name: Dynamic Content Card_700x400
+Placement Format Type: Tracking Only
+Booked Impressions: 64373 
+Placement Dates:
+30/08/2015 21:00:00 - 04/10/2015 20:59:00
+
+//To track Impressions use the following URL:
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=14639557&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Incorrect implementation of these URLs will result in major billing and reporting discrepancies.
+http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=14639557&PluID=0&ord=[timestamp]
+====================================================

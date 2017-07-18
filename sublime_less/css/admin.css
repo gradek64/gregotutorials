@@ -1,0 +1,12 @@
+/*content*/
+.sideBar {
+  width: 28%;
+  display: inline-block;
+}
+.admin_content {
+  width: 70%;
+  display: inline-block;
+}
+.greg {
+  font: Arial;
+}
